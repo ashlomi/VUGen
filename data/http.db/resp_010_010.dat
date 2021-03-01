@@ -1,0 +1,64 @@
+<svg viewBox="0 0 322 126" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="-.01%" y1="49.98%" x2="100.01%" y2="49.98%" id="shopping-prices_svg__a">
+            <stop stop-color="#FE7002" offset="0%"/>
+            <stop stop-color="#F8DA00" offset="99.35%"/>
+        </linearGradient>
+        <linearGradient x1="-6.6%" y1="-13.56%" x2="98.41%" y2="104.31%" id="shopping-prices_svg__b">
+            <stop stop-color="#FE7002" offset="0%"/>
+            <stop stop-color="#F8DA00" offset="99.35%"/>
+        </linearGradient>
+        <linearGradient x1=".01%" y1="49.98%" x2="99.97%" y2="49.98%" id="shopping-prices_svg__c">
+            <stop stop-color="#FE7002" offset="0%"/>
+            <stop stop-color="#F8DA00" offset="99.35%"/>
+        </linearGradient>
+        <linearGradient x1="-6.65%" y1="-13.6%" x2="98.42%" y2="104.35%" id="shopping-prices_svg__d">
+            <stop stop-color="#FE7002" offset="0%"/>
+            <stop stop-color="#F8DA00" offset="99.35%"/>
+        </linearGradient>
+        <linearGradient x1="5.33%" y1="123.78%" x2="57.91%" y2="36.92%" id="shopping-prices_svg__e">
+            <stop stop-color="#0A3358" offset="0%"/>
+            <stop stop-color="#0656F8" offset="99.13%"/>
+        </linearGradient>
+        <linearGradient x1="-.18%" y1="49.96%" x2="99.87%" y2="49.96%" id="shopping-prices_svg__f">
+            <stop stop-color="#FE7002" offset="0%"/>
+            <stop stop-color="#F8DA00" offset="99.35%"/>
+        </linearGradient>
+        <linearGradient x1="-.15%" y1="50.05%" x2="99.9%" y2="50.05%" id="shopping-prices_svg__g">
+            <stop stop-color="#FE7002" offset="0%"/>
+            <stop stop-color="#F8DA00" offset="99.35%"/>
+        </linearGradient>
+        <linearGradient x1="-.1%" y1="49.87%" x2="99.98%" y2="49.87%" id="shopping-prices_svg__h">
+            <stop stop-color="#FE7002" offset="0%"/>
+            <stop stop-color="#F8DA00" offset="99.35%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M59.57 71.24S322.98-38.87 249.63 16.62c-60.4 45.7-98.05 93.15-30.44 63.44 67.6-29.7 35.76 22.07 3.78 44.43H42.6s79.25-43.8 98.89-55.69-181.5 46.89-81.91 2.44z" fill="#EBECEF" fill-rule="nonzero"/>
+        <path d="M186.07 82.72l-53.74 23.59a2.94 2.94 0 01-4.04-2.06l-9.7-45.22a2.9 2.9 0 011.58-3.25l49.98-24.33a3.88 3.88 0 015.48 2.66l10.44 48.6z" fill="#0A3371" fill-rule="nonzero"/>
+        <path d="M148.07 54.34a13.6 13.6 0 100-27.2 13.6 13.6 0 000 27.2z" fill="url(#shopping-prices_svg__a)" fill-rule="nonzero" transform="translate(1)"/>
+        <path d="M148.06 50.36a9.62 9.62 0 100-19.24 9.62 9.62 0 000 19.24z" fill="url(#shopping-prices_svg__b)" fill-rule="nonzero" transform="translate(1)"/>
+        <path d="M150.3 45.5l-2.3.04a.44.44 0 01-.45-.44l-.15-8.66c0-.24.2-.44.44-.44l2.3-.04c.25 0 .45.2.45.44l.14 8.65c0 .24-.19.44-.43.45z" fill="#FFF" fill-rule="nonzero" opacity=".4"/>
+        <path d="M166.6 25.89a9.62 9.62 0 100-19.25 9.62 9.62 0 000 19.25z" fill="url(#shopping-prices_svg__c)" fill-rule="nonzero" transform="translate(1)"/>
+        <path d="M166.6 23.07a6.8 6.8 0 100-13.6 6.8 6.8 0 000 13.6z" fill="url(#shopping-prices_svg__d)" fill-rule="nonzero" transform="translate(1)"/>
+        <path d="M168.34 19.63l-1.37.03a.44.44 0 01-.44-.44l-.1-5.86c0-.25.19-.45.43-.45l1.37-.03c.24 0 .44.2.44.44l.1 5.86c0 .24-.19.45-.43.45z" fill="#FFF" fill-rule="nonzero" opacity=".4"/>
+        <path d="M189.5 94.58l-57.74 12.38a3.81 3.81 0 01-4.52-2.94l-9.33-43.5a3.81 3.81 0 012.94-4.53l57.73-12.37a3.81 3.81 0 014.52 2.94l9.33 43.5a3.84 3.84 0 01-2.94 4.52z" fill="url(#shopping-prices_svg__e)" fill-rule="nonzero" transform="translate(1)"/>
+        <path fill="#0A3371" fill-rule="nonzero" d="M185.24 51.92l-65.2 13.97 7.23 33.78 65.2-13.97z"/>
+        <path d="M187.83 78.2l-8.54 1.82a2.09 2.09 0 01-2.48-1.63l-2.47-11.53a2.09 2.09 0 011.63-2.48l8.54-1.82a6.49 6.49 0 017.7 4.98l.62 2.94a6.51 6.51 0 01-5 7.72z" fill="#0656F8" fill-rule="nonzero"/>
+        <path d="M184.03 74.5a3.66 3.66 0 100-7.32 3.66 3.66 0 000 7.32z" fill="#0A3371" fill-rule="nonzero"/>
+        <path d="M121.76 116.89a3.86 3.86 0 012.89-2.89l.75-.17c.09-.02.15-.1.15-.18 0-.09-.06-.16-.14-.19l-.76-.17a3.83 3.83 0 01-2.88-2.87l-.17-.76a.19.19 0 00-.18-.14.18.18 0 00-.17.14l-.18.76a3.85 3.85 0 01-2.87 2.88l-.76.17a.19.19 0 00-.14.19c0 .08.05.15.14.18l.76.17a3.86 3.86 0 012.88 2.89l.17.75c.02.08.1.15.18.15.08 0 .15-.07.18-.15l.15-.76z" fill="url(#shopping-prices_svg__f)" fill-rule="nonzero" transform="translate(1)"/>
+        <path d="M193.04 44.18a4.09 4.09 0 013.07-3.07l.8-.18a.2.2 0 00.16-.2c0-.08-.06-.16-.16-.18l-.8-.19a4.1 4.1 0 01-3.06-3.06l-.19-.81a.2.2 0 00-.19-.16c-.09 0-.16.06-.19.16l-.18.8a4.09 4.09 0 01-3.07 3.06l-.8.19a.2.2 0 000 .38l.8.18a4.1 4.1 0 013.07 3.07l.18.8c.02.09.1.15.2.15a.2.2 0 00.18-.15l.18-.8z" fill="url(#shopping-prices_svg__g)" fill-rule="nonzero" transform="translate(1)"/>
+        <path d="M183.68 37.56c.19-.82.84-1.47 1.66-1.66l.44-.1a.1.1 0 00.08-.1.1.1 0 00-.08-.1l-.44-.1a2.22 2.22 0 01-1.66-1.67l-.1-.43a.1.1 0 00-.1-.09.1.1 0 00-.1.09l-.1.43c-.2.83-.84 1.48-1.67 1.67l-.43.1a.1.1 0 00-.09.1c0 .04.04.09.09.1l.43.1c.83.19 1.48.84 1.67 1.66l.1.44c0 .05.05.08.1.08a.1.1 0 00.1-.08l.1-.44z" fill="url(#shopping-prices_svg__h)" fill-rule="nonzero" transform="translate(1)"/>
+        <path d="M215.07 112.6a.94.94 0 00-.75-1.44c-1.69-.08-4.4.13-6.25 1.86-3.42 3.19-3.64 7.97-3.44 10.65.04.43.64.51.78.1.65-1.85 2.04-4.6 4.84-6.2 2.12-1.22 3.87-3.52 4.82-4.96z" fill="#0A3358" fill-rule="nonzero"/>
+        <path d="M219.61 94.32c.13-.7-.8-1.08-1.21-.49-2.65 3.92-7.48 11.29-8.51 14.53a13.95 13.95 0 00.1 9.3c.15.4.63.54.97.3a14.16 14.16 0 005.35-7.7c.95-3.23 2.49-11.45 3.3-15.94z" fill="#0656F8" fill-rule="nonzero"/>
+        <path d="M209.9 123.87s.42-7.35 2.3-13.15c1.24-3.87 2.8-6.98 2.8-6.98" stroke="#0A3358" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M203.19 107.9c-1.5 3.91-1.63 9.4-1.68 13.82 0 .44.58.58.78.19 2.23-4.37 5.27-9.21 6.28-13.75-1.52.88-4.43-2.78-5.38-.27z" fill="#025AC6" fill-rule="nonzero"/>
+        <path d="M206 109.76s-1.6 3.68-2.63 6.79c-.69 2.08-1.96 5.72-1.53 7.5" stroke="#0A3358" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M202.94 108.45c.1-.32.6-.98 1.26-.75.58.2 1.72 2.42 2.4 3.17 1.52 1.66 4.55 1.6 4.97 1.17 0 0-1 .04-1.67-.63-1.02-1.03.2-2.25-1.1-3.06-.81-.52-1.5-.28-2.28-.68-.48-.24-1.69-1.21-2.7-.7-.59.31-.88 1.48-.88 1.48z" fill="#0656F8" fill-rule="nonzero"/>
+        <path d="M105.71 120.75c-1.13-.44-2.3-.3-3.6-.17 1.62 1.4 1.88 2.3 4 3.02.9.3 2.34.46 3.5 1.02.27.13.55-.16.4-.42a8.65 8.65 0 00-4.3-3.45z" fill="#0A3358" fill-rule="nonzero"/>
+        <path d="M110.42 112.87s-1.64 1.4-1.76 4.2c-.07 1.61.55 5.5.87 7.37.04.27.4.29.48.03.53-1.82 1.57-5.58 1.7-7.18a6.2 6.2 0 00-1.3-4.42z" fill="#025AC6" fill-rule="nonzero"/>
+        <path d="M107.04 114.75c-1.52-3.3-4.2-4.21-4.2-4.21s-.97 2.61.62 5.86c.94 1.9 4.5 6.16 6.17 8.1.21.23.6.02.5-.28-.68-2.4-2.2-7.56-3.1-9.47z" fill="#025AC6" fill-rule="nonzero"/>
+        <path d="M209.91 80.07L204 81.99a.9.9 0 00-.33 1.53l4.62 4.18a.91.91 0 001.5-.48l1.3-6.09a.92.92 0 00-1.17-1.06zM106.15 49.91l.97 4.22c.08.35.5.47.75.23l3.17-2.95a.45.45 0 00-.17-.77l-4.14-1.26a.46.46 0 00-.58.53z" stroke="#0A3371" stroke-linecap="round" stroke-linejoin="round"/>
+        <path stroke="#EBECEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M1.45 124.44h319.09"/>
+    </g>
+</svg>

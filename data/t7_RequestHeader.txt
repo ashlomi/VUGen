@@ -1,0 +1,9 @@
+GET /fwlink/?LinkId=517287 HTTP/1.1
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+Host: go.microsoft.com
+Connection: Keep-Alive
+Accept-Language: en-US
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko
+Accept-Encoding: gzip, deflate
+Cookie: _EDGE_V=1; MUID=2420136720CE6B512FBF1C8A21206AAF; _EDGE_S=F=1&SID=3EFDB8DD1BAE694800ADB7301A40688C
+

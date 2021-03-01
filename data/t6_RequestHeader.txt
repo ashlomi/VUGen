@@ -1,0 +1,10 @@
+GET /pages/sampling-data-scripts/0020/2903.json?t=1 HTTP/1.1
+Accept: */*
+Referer: https://cddirector.io/
+Accept-Language: en-US
+Origin: https://cddirector.io
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko
+Host: script.crazyegg.com
+Connection: Keep-Alive
+

@@ -1,0 +1,11 @@
+HTTP/1.1 200 
+Date: Mon, 01 Mar 2021 12:34:30 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: origin,access-control-request-method,access-control-request-headers,accept-encoding
+X-Request-ID: 43b9418281fe60d88243c0eb6b22a038
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: https://microsoftedgewelcome.microsoft.com
+Content-Encoding: gzip
+

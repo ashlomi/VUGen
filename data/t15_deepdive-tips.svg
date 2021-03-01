@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="73px" height="59px" viewBox="0 0 73 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>deepdive-tips</title>
+    <g id="deepdive-tips" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy-3" fill="#80B9EC" transform="translate(23.092829, 21.512613) rotate(-20.000000) translate(-23.092829, -21.512613) " x="5.09282878" y="5.51261272" width="36" height="32" rx="1"></rect>
+        <rect id="Rectangle-Copy-4" fill="#4D9DE4" transform="translate(29.591212, 39.366773) rotate(-20.000000) translate(-29.591212, -39.366773) " x="11.5912115" y="27.3667725" width="36" height="24" rx="1"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="2.4" transform="translate(26.000000, 29.500000) rotate(-20.000000) translate(-26.000000, -29.500000) " x="9.2" y="6.2" width="33.6" height="46.6" rx="1"></rect>
+        <rect id="Rectangle-Copy-3" fill="#80B9EC" transform="translate(40.523990, 23.129134) rotate(-10.000000) translate(-40.523990, -23.129134) " x="22.5239905" y="7.1291341" width="36" height="32" rx="1"></rect>
+        <rect id="Rectangle-Copy-4" fill="#4D9DE4" transform="translate(43.823306, 41.840481) rotate(-10.000000) translate(-43.823306, -41.840481) " x="25.8233059" y="29.8404814" width="36" height="24" rx="1"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="2.4" transform="translate(42.000000, 31.500000) rotate(-10.000000) translate(-42.000000, -31.500000) " x="25.2" y="8.2" width="33.6" height="46.6" rx="1"></rect>
+        <rect id="Rectangle-Copy-3" fill="#80B9EC" x="37" y="10" width="36" height="32" rx="1"></rect>
+        <rect id="Rectangle-Copy-4" fill="#4D9DE4" x="37" y="33" width="36" height="24" rx="1"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="2.4" x="38.2" y="11.2" width="33.6" height="46.6" rx="1"></rect>
+    </g>
+</svg>

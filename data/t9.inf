@@ -1,0 +1,11 @@
+[t9]
+FileName1=t9_88.0.705.json
+URL1=https://config.edge.skype.com/config/v1/Edge/88.0.705.81?clientId=5774908387212431860&osname=win&client=edge&channel=stable&scpfull=0&scpguard=1&scpfre=0&scpver=2&osver=10.0.19042&osarch=x86_64&osedition=enterprise&wu=1&devicefamily=desktop&uma=1&mngd=0&installdate=1601990019
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_9.xml
+RequestHeaderFile=t9_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t9_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

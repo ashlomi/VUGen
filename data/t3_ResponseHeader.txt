@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Cache-Control: public, max-age=15552000
+Content-Length: 90518
+Content-Type: text/xml
+Last-Modified: Thu, 20 Feb 2020 01:30:24 GMT
+Set-Cookie: MUID=2420136720CE6B512FBF1C8A21206AAF; domain=.microsoft.com; expires=Sat, 26-Mar-2022 12:32:52 GMT; path=/; secure; SameSite=None
+Set-Cookie: MUIDB=2420136720CE6B512FBF1C8A21206AAF; expires=Sat, 26-Mar-2022 12:32:52 GMT; path=/; HttpOnly
+Set-Cookie: _EDGE_S=F=1&SID=3EFDB8DD1BAE694800ADB7301A40688C; domain=.microsoft.com; path=/; HttpOnly
+Set-Cookie: _EDGE_V=1; domain=.microsoft.com; expires=Sat, 26-Mar-2022 12:32:52 GMT; path=/; HttpOnly
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-MSEdge-Ref: Ref A: BB443D891B4A4993B819ADC85E20E0AC Ref B: LAX311000113049 Ref C: 2021-03-01T12:32:52Z
+Date: Mon, 01 Mar 2021 12:32:51 GMT
+

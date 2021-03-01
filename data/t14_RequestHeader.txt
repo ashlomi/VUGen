@@ -1,0 +1,16 @@
+POST /rest/v1/delivery?client=microsoftmscompoc&sessionId=a0ae35d099b341fa85044dd00228d422&version=2.3.0 HTTP/1.1
+Host: target.microsoft.com
+Connection: keep-alive
+Content-Length: 861
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36 Edg/88.0.705.81
+Content-Type: text/plain
+Accept: */*
+Origin: https://microsoftedgewelcome.microsoft.com
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://microsoftedgewelcome.microsoft.com/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: MC1=GUID=70ec0040c7b74eb083da78972141d246&HASH=70ec&LV=202010&V=4&LU=1601988275502; MUID=2C0E6000F54C6902386A6F5BF4E768D7; __CT_Data=gpv=4&ckp=tld&dm=microsoft.com; AMCV_EA76ADE95776D2EC7F000101%40AdobeOrg=-894706358%7CMCIDTS%7C18568%7CMCMID%7C15551505143093422353780157052409978945%7CMCAAMLH-1604833043%7C9%7CMCAAMB-1604833112%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1604235443s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-18575%7CvVersion%7C2.3.0%7CMCCIDH%7C1973704019; at_check=true; mbox=PC#e562c17597bc4e9383ccccfbe805c094.35_0#1667473113|session#a0ae35d099b341fa85044dd00228d422#1614603957
+

@@ -1,0 +1,7 @@
+GET /fwlink/?linkid=2133855&bucket=51&customertype=0 HTTP/1.1
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko
+Host: go.microsoft.com
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+

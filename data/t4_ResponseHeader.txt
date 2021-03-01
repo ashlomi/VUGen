@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+Server: unknown
+Date: Mon, 01 Mar 2021 12:32:57 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 152888
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Link: <https://cddirector.io/wp-json/>; rel="https://api.w.org/"
+Link: <https://cddirector.io/wp-json/wp/v2/pages/2>; rel="alternate"; type="application/json"
+Link: <https://cddirector.io/>; rel=shortlink
+X-Powered-By: WP Engine
+X-Cacheable: SHORT
+Vary: Accept-Encoding,Cookie
+Cache-Control: max-age=600, must-revalidate
+X-Cache: HIT: 9
+X-Cache-Group: normal
+Accept-Ranges: bytes
+Set-Cookie: 7c1b963b3101940d071c7fe32216bf41=ce2c73b4cb79458d2962af857239f5f9; path=/; HttpOnly; Secure
+Cache-control: private
+

@@ -1,0 +1,13 @@
+[t16]
+FileName1=t16.html
+URL1=https://www.microsoft.com/store/buy/cartcount
+Total=2
+RequestHeaderFile=t16_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t16_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_16.xml
+FileName2=t16_RE4xvsU.png
+URL2=https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4xvsU?ver=77c4
+[ProtocolInfo]
+ProtocolId=QTWeb

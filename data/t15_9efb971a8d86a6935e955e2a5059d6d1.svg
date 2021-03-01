@@ -1,0 +1,153 @@
+<svg viewBox="0 0 559 393" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-19.5%" y="-27.9%" width="138.9%" height="155.8%" filterUnits="objectBoundingBox" id="shopping-camera_svg__a">
+            <feOffset dx="30" dy="-26" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.143915777 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter x="-18.3%" y="-25.4%" width="133.3%" height="144.1%" filterUnits="objectBoundingBox" id="shopping-camera_svg__f">
+            <feOffset dx="-3" dy="-7" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.120730313 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"/>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter2" result="shadowMatrixOuter2"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+        <filter x="-87.5%" y="-100%" width="275%" height="300%" filterUnits="objectBoundingBox" id="shopping-camera_svg__i">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"/>
+            <feOffset dy="3" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.218592931 0" in="shadowInnerInner1"/>
+        </filter>
+        <filter x="-27.5%" y="-38.5%" width="150%" height="166.7%" filterUnits="objectBoundingBox" id="shopping-camera_svg__j">
+            <feOffset dx="-3" dy="-7" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.120730313 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"/>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter2" result="shadowMatrixOuter2"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+        <filter x="-16.4%" y="-22.4%" width="129.9%" height="138.8%" filterUnits="objectBoundingBox" id="shopping-camera_svg__l">
+            <feOffset dx="-3" dy="-7" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.120730313 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"/>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter2" result="shadowMatrixOuter2"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+        <filter x="-16.4%" y="-22.4%" width="129.9%" height="138.8%" filterUnits="objectBoundingBox" id="shopping-camera_svg__n">
+            <feOffset dx="-3" dy="-7" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.120730313 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"/>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter2" result="shadowMatrixOuter2"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+        <linearGradient x1="72.29%" y1="47.1%" x2="60.91%" y2="47.98%" id="shopping-camera_svg__c">
+            <stop stop-opacity=".5" offset="0%"/>
+            <stop stop-color="#424242" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="10.07%" y1="49.43%" x2="94.02%" y2="52.76%" id="shopping-camera_svg__e">
+            <stop stop-color="#FFF" stop-opacity=".5" offset="0%"/>
+            <stop stop-opacity=".5" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="103.02%" y1="50.23%" x2="0%" y2="50%" id="shopping-camera_svg__p">
+            <stop stop-opacity=".68" offset="0%"/>
+            <stop stop-color="#0B0B0B" stop-opacity=".55" offset="7.63%"/>
+            <stop stop-color="#373737" stop-opacity=".03" offset="15.3%"/>
+            <stop stop-color="#454545" stop-opacity=".06" offset="19.97%"/>
+            <stop stop-color="#AFAFAF" stop-opacity=".05" offset="30.46%"/>
+            <stop stop-color="#D3D3D3" stop-opacity=".1" offset="43.42%"/>
+            <stop stop-color="#9E9E9E" stop-opacity=".05" offset="72.21%"/>
+            <stop stop-color="#2B2B2B" stop-opacity=".01" offset="88.78%"/>
+            <stop stop-opacity=".75" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="103.02%" y1="50.42%" x2="-11.47%" y2="50%" id="shopping-camera_svg__q">
+            <stop stop-opacity=".68" offset="0%"/>
+            <stop stop-color="#0B0B0B" stop-opacity=".55" offset="7.63%"/>
+            <stop stop-color="#373737" stop-opacity=".03" offset="15.3%"/>
+            <stop stop-color="#454545" stop-opacity=".06" offset="19.97%"/>
+            <stop stop-color="#AFAFAF" stop-opacity=".05" offset="30.46%"/>
+            <stop stop-color="#D3D3D3" stop-opacity=".1" offset="43.42%"/>
+            <stop stop-color="#9E9E9E" stop-opacity=".05" offset="72.21%"/>
+            <stop stop-color="#2B2B2B" stop-opacity=".01" offset="88.78%"/>
+            <stop stop-opacity=".75" offset="100%"/>
+        </linearGradient>
+        <ellipse id="shopping-camera_svg__g" cx="408.5" cy="279.5" rx="30" ry="29.5"/>
+        <ellipse id="shopping-camera_svg__h" cx="427.5" cy="216.5" rx="4" ry="3.5"/>
+        <ellipse id="shopping-camera_svg__k" cx="388" cy="202.5" rx="20" ry="19.5"/>
+        <circle id="shopping-camera_svg__m" cx="337.5" cy="265.5" r="33.5"/>
+        <circle id="shopping-camera_svg__o" cx="80.5" cy="269.5" r="33.5"/>
+        <path d="M333.38 144.59l89.17 30.6A51 51 0 01457 223.41V258a51 51 0 01-51 51H43a43 43 0 01-43-43v-16c0-23.75 32.25-73 56-73l245.87-8.51A16.89 16.89 0 00318 154a11.7 11.7 0 0115.38-9.41z" id="shopping-camera_svg__b"/>
+        <path d="M363.7 172.49l55.26 14.52A51 51 0 01457 236.33V268a51 51 0 01-51 51H43a43 43 0 01-43-43v-16a43 43 0 0143-43h267.46a27.1 27.1 0 0027.04-25.5 20.93 20.93 0 0126.2-19.01z" id="shopping-camera_svg__d"/>
+    </defs>
+    <g filter="url(#shopping-camera_svg__a)" transform="translate(49 52)" fill="none" fill-rule="evenodd" opacity=".7">
+        <use fill="#212121" xlink:href="#shopping-camera_svg__b"/>
+        <use fill="url(#shopping-camera_svg__c)" xlink:href="#shopping-camera_svg__b"/>
+        <use fill="#404040" xlink:href="#shopping-camera_svg__d"/>
+        <path stroke="#3B3B3B" stroke-width="11" d="M348.14 181.2a15.38 15.38 0 0114.17-3.39h0l55.25 14.52a45.43 45.43 0 0124.47 16.22 45.43 45.43 0 019.47 27.78h0V268c0 12.56-5.1 23.94-13.33 32.17A45.36 45.36 0 01406 313.5h0H43a37.38 37.38 0 01-26.52-10.98A37.38 37.38 0 015.5 276h0v-16c0-10.36 4.2-19.73 10.98-26.52A37.38 37.38 0 0143 222.5h267.46a32.5 32.5 0 0022.35-8.88 32.5 32.5 0 0010.18-21.8c.25-4.25 2.2-8 5.15-10.62z" stroke-linejoin="square" fill-opacity=".2" fill="url(#shopping-camera_svg__e)"/>
+        <rect fill="#1B1B1B" x="151" y="208" width="134" height="111" rx="5"/>
+        <rect fill="#404040" opacity=".5" x="179" y="231" width="78" height="88" rx="5"/>
+        <rect fill="#404040" opacity=".5" x="188" y="260" width="60" height="59" rx="5"/>
+        <use fill="#000" filter="url(#shopping-camera_svg__f)" xlink:href="#shopping-camera_svg__g"/>
+        <ellipse stroke="#4F4D4D" stroke-width="2" stroke-linejoin="square" fill="#3F3F3F" cx="408.5" cy="279.5" rx="29" ry="28.5"/>
+        <use fill="#B54E45" xlink:href="#shopping-camera_svg__h"/>
+        <use fill="#000" filter="url(#shopping-camera_svg__i)" xlink:href="#shopping-camera_svg__h"/>
+        <ellipse stroke="#161616" stroke-width="4" cx="427.5" cy="216.5" rx="6" ry="5.5"/>
+        <g>
+            <use fill="#000" filter="url(#shopping-camera_svg__j)" xlink:href="#shopping-camera_svg__k"/>
+            <ellipse stroke="#000" stroke-width="2" stroke-linejoin="square" fill="#161616" cx="388" cy="202.5" rx="19" ry="18.5"/>
+        </g>
+        <circle fill="#242424" cx="388.5" cy="202.5" r="12.5"/>
+        <g>
+            <use fill="#000" filter="url(#shopping-camera_svg__l)" xlink:href="#shopping-camera_svg__m"/>
+            <circle stroke="#4F4D4D" stroke-width="2" stroke-linejoin="square" fill="#3F3F3F" cx="337.5" cy="265.5" r="32.5"/>
+        </g>
+        <g>
+            <use fill="#000" filter="url(#shopping-camera_svg__n)" xlink:href="#shopping-camera_svg__o"/>
+            <circle stroke="#5F5E5E" stroke-width="2" stroke-linejoin="square" fill="#4D4D4D" cx="80.5" cy="269.5" r="32.5"/>
+        </g>
+        <g>
+            <path fill="#1F1F1F" d="M99.35 119.5h225.3V72.98H99.35z"/>
+            <path fill="#1E1E1E" d="M93 17.98h238V0H93z"/>
+            <path fill="#2A2A2A" d="M101.46 174.5h221.08v-55H101.46z"/>
+            <path fill="#323232" d="M315.13 184.44v-11H108.87v11l18.74 8.04h168.76l18.76-8.04"/>
+            <path fill="#292929" d="M297.15 199.07v-7.65h-170.3v7.65l9.5 2.93h151.3l9.5-2.93"/>
+            <path fill="#2A2A2A" d="M331 17.98H93v40.7l6.28 14.3h225.45l6.27-14.3z"/>
+            <path fill="#BBB" opacity=".1" d="M101.46 122.68h221.08v-3.17H101.46z"/>
+            <g opacity=".3" fill="#3B3B3A">
+                <path d="M148 116.34h2.12v-42.3H148zM264.36 116.34h2.12v-42.3h-2.12zM206.18 116.34h2.12v-42.3h-2.12zM322.54 116.34h2.11v-42.3h-2.11zM142.72 116.34h2.11v-42.3h-2.11zM259.07 116.34h2.12v-42.3h-2.12zM200.9 116.34h2.1v-42.3h-2.1zM317.25 116.34h2.11v-42.3h-2.11zM137.43 116.34h2.11v-42.3h-2.11zM253.78 116.34h2.12v-42.3h-2.12zM195.6 116.34h2.12v-42.3h-2.12zM311.96 116.34h2.12v-42.3h-2.12zM132.14 116.34h2.11v-42.3h-2.11zM248.5 116.34h2.1v-42.3h-2.1zM190.32 116.34h2.11v-42.3h-2.11zM306.67 116.34h2.12v-42.3h-2.12zM126.85 116.34h2.11v-42.3h-2.11zM243.2 116.34h2.12v-42.3h-2.12zM185.03 116.34h2.11v-42.3h-2.11zM301.38 116.34h2.12v-42.3h-2.12zM121.56 116.34h2.12v-42.3h-2.12zM237.92 116.34h2.11v-42.3h-2.11zM179.74 116.34h2.11v-42.3h-2.11zM296.1 116.34h2.1v-42.3h-2.1zM116.27 116.34h2.12v-42.3h-2.12zM232.63 116.34h2.11v-42.3h-2.11zM174.45 116.34h2.11v-42.3h-2.11zM290.8 116.34h2.12v-42.3h-2.12zM110.98 116.34h2.12v-42.3h-2.12zM227.34 116.34h2.11v-42.3h-2.11zM169.16 116.34h2.12v-42.3h-2.12zM285.52 116.34h2.11v-42.3h-2.11zM105.7 116.34h2.1v-42.3h-2.1zM222.05 116.34h2.11v-42.3h-2.11zM163.87 116.34H166v-42.3h-2.12zM280.23 116.34h2.11v-42.3h-2.11zM100.4 116.34h2.12v-42.3h-2.12zM216.76 116.34h2.12v-42.3h-2.12zM158.58 116.34h2.12v-42.3h-2.12zM274.94 116.34h2.11v-42.3h-2.11zM153.3 116.34h2.1v-42.3h-2.1zM269.65 116.34h2.11v-42.3h-2.11zM211.47 116.34h2.12v-42.3h-2.12z"/>
+            </g>
+            <path d="M229.54 120v54.5h-7.4v9.94l-17.99 7.7v6.93l-9.5 2.93H43.36l-9.5-2.93v-6.92l-17.98-7.71v-9.94h-7.4V120h221.07z" fill="url(#shopping-camera_svg__p)" transform="translate(93)"/>
+            <path fill="url(#shopping-camera_svg__q)" d="M238 0v58.67l-6.27 14.3h-.08v46.54h-2.11v.49H8.46v-.5H6.35V72.98h-.07L0 58.67V0z" transform="translate(93)"/>
+        </g>
+    </g>
+</svg>

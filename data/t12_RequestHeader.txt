@@ -1,0 +1,9 @@
+GET /fwlink/?linkid=2135547 HTTP/1.1
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+Accept-Language: en-US
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko
+Accept-Encoding: gzip, deflate
+Host: go.microsoft.com
+Connection: Keep-Alive
+Cookie: _EDGE_S=F=1&SID=3EFDB8DD1BAE694800ADB7301A40688C&mkt=en-us; _SS=SID=3EFDB8DD1BAE694800ADB7301A40688C; at_check=true; SRCHUID=V=2&GUID=E1F22B88A08F49D98E24187A9518D621&dmnchg=1; AMCV_EA76ADE95776D2EC7F000101%40AdobeOrg=-1303530583%7CMCIDTS%7C18688%7CvVersion%7C3.3.0; SRCHD=AF=NOFORM; _EDGE_V=1; MUID=2420136720CE6B512FBF1C8A21206AAF; mbox=session#1d6738f1101f45fcaea007aec0c42f63#1614603910; SRCHUSR=DOB=20210301; SRCHHPGUSR=SRCHLANGV2=en
+

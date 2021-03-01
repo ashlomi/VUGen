@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+Accept-Ranges: none
+ETag: "2bcd5-y/cuGnFrJ3ImQWdFykj1ZLmpF+s"
+Vary: Accept-Encoding
+Set-Cookie: sessionid=s%3ANPlo_L94ismLmjl4TQwF4WuvcuZ4gfow.5KAP7qJJnllJnSnGIwicYC9BEdVo%2FNRjn6Vqa%2ByXe7I; Path=/; Expires=Tue, 02 Mar 2021 12:34:14 GMT; HttpOnly; Secure; SameSite=Lax
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Referrer-Policy: strict-origin
+Set-Cookie: ARRAffinity=059b731ae8d92237f70a52b5a0c316ecabb364e7c94e259c8583fa57cbf58918;Path=/;HttpOnly;Secure;Domain=microsoftedgewelcome.microsoft.com
+Set-Cookie: ARRAffinitySameSite=059b731ae8d92237f70a52b5a0c316ecabb364e7c94e259c8583fa57cbf58918;Path=/;HttpOnly;SameSite=None;Secure;Domain=microsoftedgewelcome.microsoft.com
+Date: Mon, 01 Mar 2021 12:34:14 GMT
+

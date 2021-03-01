@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Cache-Control: public, max-age=15552000
+Content-Length: 4286
+Content-Type: image/x-icon
+Last-Modified: Sun, 28 Feb 2021 05:59:23 GMT
+X-Cache: TCP_HIT
+Server: Kestrel
+X-MSEdge-Ref: Ref A: 0963DE5FD5AF470A992C63AACF9B3C29 Ref B: LAX311000114049 Ref C: 2021-03-01T12:32:46Z
+Date: Mon, 01 Mar 2021 12:32:45 GMT
+

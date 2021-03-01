@@ -1,0 +1,2 @@
+"{\"clientContext\":{\"appname\":\"Edge\",\"buildversion\":\"88.0.705.81\",\"ismobile\":false,\""
+"osname\":\"Windows NT\",\"osversion\":\"10.0.19042\"}}"

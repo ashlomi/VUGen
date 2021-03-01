@@ -1,0 +1,23 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+X-CorrelationId: 777cedb3-3cb2-4a1f-bd32-793b5a6ada52
+X-UserSessionId: 777cedb3-3cb2-4a1f-bd32-793b5a6ada52
+X-OfficeFE: OdcSupFrontEnd_IN_5
+X-OfficeVersion: 16.0.13825.37651
+X-OfficeCluster: eus-zzz.odcsup.osi.office.net
+P3P: CP="CAO DSP COR ADMa DEV CONi TELi CUR PSA PSD TAI IVDi OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR"
+X-Content-Type-Options: nosniff
+Content-Length: 21304
+Expires: Mon, 01 Mar 2021 12:34:09 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 01 Mar 2021 12:34:09 GMT
+Connection: keep-alive
+Set-Cookie: EXPID=08e1e7bf-2b1f-4bbf-b3ca-14914a88dcfd; expires=Tue, 01-Mar-2022 12:34:09 GMT; path=/; secure; HttpOnly
+Set-Cookie: __RequestVerificationToken=dvWXDn2Dwd0OcSGWXU8Uq2n_eRpzsjrNiRSaAF2sHRO023QVjFZWIODPhYoDXGXAA2RcSQHcOUHqBF2N0o-OuS4Gtw52C7hXkx6MjtPsy2c1; path=/; secure; HttpOnly
+Set-Cookie: AuthSess=ff3428df-db40-4057-b2ca-e18df7c9af57; domain=support.microsoft.com; path=/; samesite=none; secure; HttpOnly
+Set-Cookie: AADNonce.support=3708bc29-5219-457d-8189-8f11891322dc.637501988498179241; domain=support.microsoft.com; path=/; samesite=none; secure; HttpOnly
+Strict-Transport-Security: max-age=86400 ; includeSubDomains
+

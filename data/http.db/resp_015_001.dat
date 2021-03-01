@@ -1,0 +1,2348 @@
+<!doctype html >
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+    <title>Continuous Delivery Director | The Intelligent Pipeline for your DevOps Initiatives</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="https://cddirector.io/xmlrpc.php" />
+    <meta name='robots' content='noindex,nofollow' />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://cddirector.io/wp-content/uploads/2019/10/CA-Broadcom_Stacked_red-black.png"/><link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Continuous Delivery Director &raquo; Feed" href="https://cddirector.io/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/cddirector.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.3"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://cddirector.io/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='image-map-pro-dist-css-css'  href='https://cddirector.io/wp-content/plugins/image-map-pro-wordpress/css/image-map-pro.min.css?ver=5.1.6' type='text/css' media='' />
+<link rel='stylesheet' id='td-plugin-multi-purpose-css'  href='https://cddirector.io/wp-content/plugins/td-composer/td-multi-purpose/style.css?ver=5a862b9d7c39671de80dd6dee389818b' type='text/css' media='all' />
+<link rel='stylesheet' id='font_awesome-css'  href='https://cddirector.io/wp-content/plugins/td-composer/assets/fonts/font-awesome/font-awesome.css?ver=5a862b9d7c39671de80dd6dee389818b' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-style-css'  href='https://fonts.googleapis.com/css?family=Montserrat%3A400%7COpen+Sans%3A300italic%2C400%2C400italic%2C600%2C600italic%2C700%7CRoboto%3A300%2C400%2C400italic%2C500%2C500italic%2C700%2C900&#038;ver=9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='td-theme-css'  href='https://cddirector.io/wp-content/themes/Newspaper/style.css?ver=9.8' type='text/css' media='all' />
+<style id='td-theme-inline-css' type='text/css'>
+    
+        @media (max-width: 767px) {
+            .td-header-desktop-wrap {
+                display: none;
+            }
+        }
+        @media (min-width: 767px) {
+            .td-header-mobile-wrap {
+                display: none;
+            }
+        }
+    
+	
+</style>
+<link rel='stylesheet' id='td-legacy-framework-front-style-css'  href='https://cddirector.io/wp-content/plugins/td-composer/legacy/Newspaper/assets/css/td_legacy_main.css?ver=5a862b9d7c39671de80dd6dee389818b' type='text/css' media='all' />
+<link rel='stylesheet' id='tdb_front_style-css'  href='https://cddirector.io/wp-content/plugins/td-cloud-library/assets/css/tdb_less_front.css?ver=489325fca4f12cbec6ded350cf173551' type='text/css' media='all' /><link rel="stylesheet" type="text/css" href="https://cddirector.io/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Application/Frontend/Assets/dist/smartslider.min.css?ver=70fceec4" media="all" />
+<style type="text/css">.n2-ss-spinner-simple-white-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.n2-ss-spinner-simple-white {
+  outline: 1px solid RGBA(0,0,0,0);
+  width:100%;
+  height: 100%;
+}
+
+.n2-ss-spinner-simple-white:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -11px;
+    margin-left: -11px;
+}
+
+.n2-ss-spinner-simple-white:not(:required):before {
+    content: '';
+    border-radius: 50%;
+    border-top: 2px solid #333;
+    border-right: 2px solid transparent;
+    animation: n2SimpleWhite .6s linear infinite;
+}
+@keyframes n2SimpleWhite {
+    to {transform: rotate(360deg);}
+}</style>
+<script type='text/javascript' src='https://cddirector.io/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<link rel="https://api.w.org/" href="https://cddirector.io/wp-json/" /><link rel="alternate" type="application/json" href="https://cddirector.io/wp-json/wp/v2/pages/2" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://cddirector.io/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://cddirector.io/wp-includes/wlwmanifest.xml" /> 
+<link rel="canonical" href="https://cddirector.io/" />
+<link rel='shortlink' href='https://cddirector.io/' />
+<link rel="alternate" type="application/json+oembed" href="https://cddirector.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcddirector.io%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://cddirector.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcddirector.io%2F&#038;format=xml" />
+   <script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-61260089-15']);
+   _gaq.push(['_trackPageview']);
+   (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+   </script>
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+        <script>
+        window.tdb_globals = {"wpRestNonce":"df598f1f47","wpRestUrl":"https:\/\/cddirector.io\/wp-json\/","permalinkStructure":"\/%year%\/%monthnum%\/%day%\/%postname%\/","isAjax":false,"isAdminBarShowing":false,"autoloadScrollPercent":50};
+    </script>
+    			<script>
+				window.tdwGlobal = {"adminUrl":"https:\/\/cddirector.io\/wp-admin\/","wpRestNonce":"df598f1f47","wpRestUrl":"https:\/\/cddirector.io\/wp-json\/","permalinkStructure":"\/%year%\/%monthnum%\/%day%\/%postname%\/"};
+			</script>
+			
+<!-- JS generated by theme -->
+
+<script>
+    
+    
+
+	    var tdBlocksArray = []; //here we store all the items for the current page
+
+	    //td_block class - each ajax block uses a object of this class for requests
+	    function tdBlock() {
+		    this.id = '';
+		    this.block_type = 1; //block type id (1-234 etc)
+		    this.atts = '';
+		    this.td_column_number = '';
+		    this.td_current_page = 1; //
+		    this.post_count = 0; //from wp
+		    this.found_posts = 0; //from wp
+		    this.max_num_pages = 0; //from wp
+		    this.td_filter_value = ''; //current live filter value
+		    this.is_ajax_running = false;
+		    this.td_user_action = ''; // load more or infinite loader (used by the animation)
+		    this.header_color = '';
+		    this.ajax_pagination_infinite_stop = ''; //show load more at page x
+	    }
+
+
+        // td_js_generator - mini detector
+        (function(){
+            var htmlTag = document.getElementsByTagName("html")[0];
+
+	        if ( navigator.userAgent.indexOf("MSIE 10.0") > -1 ) {
+                htmlTag.className += ' ie10';
+            }
+
+            if ( !!navigator.userAgent.match(/Trident.*rv\:11\./) ) {
+                htmlTag.className += ' ie11';
+            }
+
+	        if ( navigator.userAgent.indexOf("Edge") > -1 ) {
+                htmlTag.className += ' ieEdge';
+            }
+
+            if ( /(iPad|iPhone|iPod)/g.test(navigator.userAgent) ) {
+                htmlTag.className += ' td-md-is-ios';
+            }
+
+            var user_agent = navigator.userAgent.toLowerCase();
+            if ( user_agent.indexOf("android") > -1 ) {
+                htmlTag.className += ' td-md-is-android';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Mac OS X')  ) {
+                htmlTag.className += ' td-md-is-os-x';
+            }
+
+            if ( /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()) ) {
+               htmlTag.className += ' td-md-is-chrome';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Firefox') ) {
+                htmlTag.className += ' td-md-is-firefox';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Safari') && -1 === navigator.userAgent.indexOf('Chrome') ) {
+                htmlTag.className += ' td-md-is-safari';
+            }
+
+            if( -1 !== navigator.userAgent.indexOf('IEMobile') ){
+                htmlTag.className += ' td-md-is-iemobile';
+            }
+
+        })();
+
+
+
+
+        var tdLocalCache = {};
+
+        ( function () {
+            "use strict";
+
+            tdLocalCache = {
+                data: {},
+                remove: function (resource_id) {
+                    delete tdLocalCache.data[resource_id];
+                },
+                exist: function (resource_id) {
+                    return tdLocalCache.data.hasOwnProperty(resource_id) && tdLocalCache.data[resource_id] !== null;
+                },
+                get: function (resource_id) {
+                    return tdLocalCache.data[resource_id];
+                },
+                set: function (resource_id, cachedData) {
+                    tdLocalCache.remove(resource_id);
+                    tdLocalCache.data[resource_id] = cachedData;
+                }
+            };
+        })();
+
+    
+    
+var td_viewport_interval_list=[{"limitBottom":767,"sidebarWidth":228},{"limitBottom":1018,"sidebarWidth":300},{"limitBottom":1140,"sidebarWidth":324}];
+var tdc_is_installed="yes";
+var td_ajax_url="https:\/\/cddirector.io\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=9.8";
+var td_get_template_directory_uri="https:\/\/cddirector.io\/wp-content\/plugins\/td-composer\/legacy\/common";
+var tds_snap_menu="";
+var tds_logo_on_sticky="";
+var tds_header_style="tdm_header_style_3";
+var td_please_wait="Please wait...";
+var td_email_user_pass_incorrect="User or password incorrect!";
+var td_email_user_incorrect="Email or username incorrect!";
+var td_email_incorrect="Email incorrect!";
+var tds_more_articles_on_post_enable="show";
+var tds_more_articles_on_post_time_to_wait="";
+var tds_more_articles_on_post_pages_distance_from_top=0;
+var tds_theme_color_site_wide="#4db2ec";
+var tds_smart_sidebar="";
+var tdThemeName="Newspaper";
+var td_magnific_popup_translation_tPrev="Previous (Left arrow key)";
+var td_magnific_popup_translation_tNext="Next (Right arrow key)";
+var td_magnific_popup_translation_tCounter="%curr% of %total%";
+var td_magnific_popup_translation_ajax_tError="The content from %url% could not be loaded.";
+var td_magnific_popup_translation_image_tError="The image #%curr% could not be loaded.";
+var tdBlockNonce="572c802cea";
+var tdDateNamesI18n={"month_names":["January","February","March","April","May","June","July","August","September","October","November","December"],"month_names_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"day_names":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"day_names_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]};
+var td_ad_background_click_link="";
+var td_ad_background_click_target="";
+</script>
+
+
+<!-- Header style compiled by theme -->
+
+<style>
+    
+.td-theme-wrap .block-title > span,
+    .td-theme-wrap .block-title > span > a,
+    .td-theme-wrap .widget_rss .block-title .rsswidget,
+    .td-theme-wrap .block-title > a,
+    .widgettitle,
+    .widgettitle > a,
+    .td-trending-now-title,
+    .wpb_tabs li.ui-tabs-active a,
+    .wpb_tabs li:hover a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+    .td-related-title .td-cur-simple-item,
+    .woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+    .woocommerce .product .products h2:not(.woocommerce-loop-product__title),
+    .td-theme-wrap .td_block_template_2 .td-block-title > *,
+    .td-theme-wrap .td_block_template_3 .td-block-title > *,
+    .td-theme-wrap .td_block_template_4 .td-block-title > *,
+    .td-theme-wrap .td_block_template_5 .td-block-title > *,
+    .td-theme-wrap .td_block_template_6 .td-block-title > *,
+    .td-theme-wrap .td_block_template_6 .td-block-title:before,
+    .td-theme-wrap .td_block_template_7 .td-block-title > *,
+    .td-theme-wrap .td_block_template_8 .td-block-title > *,
+    .td-theme-wrap .td_block_template_9 .td-block-title > *,
+    .td-theme-wrap .td_block_template_10 .td-block-title > *,
+    .td-theme-wrap .td_block_template_11 .td-block-title > *,
+    .td-theme-wrap .td_block_template_12 .td-block-title > *,
+    .td-theme-wrap .td_block_template_13 .td-block-title > span,
+    .td-theme-wrap .td_block_template_13 .td-block-title > a,
+    .td-theme-wrap .td_block_template_14 .td-block-title > *,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option i,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover i,
+    .td-theme-wrap .td_block_template_15 .td-block-title > *,
+    .td-theme-wrap .td_block_template_15 .td-block-title-wrap .td-wrapper-pulldown-filter,
+    .td-theme-wrap .td_block_template_15 .td-block-title-wrap .td-wrapper-pulldown-filter i,
+    .td-theme-wrap .td_block_template_16 .td-block-title > *,
+    .td-theme-wrap .td_block_template_17 .td-block-title > * {
+    	color: #ffffff;
+    }
+
+
+    
+    .td-header-wrap .td-header-top-menu-full,
+    .td-header-wrap .top-header-menu .sub-menu {
+        background-color: #cc092f;
+    }
+    .td-header-style-8 .td-header-top-menu-full {
+        background-color: transparent;
+    }
+    .td-header-style-8 .td-header-top-menu-full .td-header-top-menu {
+        background-color: #cc092f;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .td-header-wrap .td-header-top-menu-full .td-header-top-menu,
+    .td-header-wrap .td-header-top-menu-full {
+        border-bottom: none;
+    }
+
+
+    
+    .td-header-top-menu,
+    .td-header-top-menu a,
+    .td-header-wrap .td-header-top-menu-full .td-header-top-menu,
+    .td-header-wrap .td-header-top-menu-full a,
+    .td-header-style-8 .td-header-top-menu,
+    .td-header-style-8 .td-header-top-menu a,
+    .td-header-top-menu .td-drop-down-search .entry-title a {
+        color: #ffffff;
+    }
+
+    
+    .top-header-menu .current-menu-item > a,
+    .top-header-menu .current-menu-ancestor > a,
+    .top-header-menu .current-category-ancestor > a,
+    .top-header-menu li a:hover,
+    .td-header-sp-top-widget .td-icon-search:hover {
+        color: #ffffff;
+    }
+
+    
+    .td-header-wrap .td-header-menu-wrap-full,
+    .td-header-menu-wrap.td-affix,
+    .td-header-style-3 .td-header-main-menu,
+    .td-header-style-3 .td-affix .td-header-main-menu,
+    .td-header-style-4 .td-header-main-menu,
+    .td-header-style-4 .td-affix .td-header-main-menu,
+    .td-header-style-8 .td-header-menu-wrap.td-affix,
+    .td-header-style-8 .td-header-top-menu-full {
+		background-color: #eeeeee;
+    }
+
+
+    .td-boxed-layout .td-header-style-3 .td-header-menu-wrap,
+    .td-boxed-layout .td-header-style-4 .td-header-menu-wrap,
+    .td-header-style-3 .td_stretch_content .td-header-menu-wrap,
+    .td-header-style-4 .td_stretch_content .td-header-menu-wrap {
+    	background-color: #eeeeee !important;
+    }
+
+
+    @media (min-width: 1019px) {
+        .td-header-style-1 .td-header-sp-recs,
+        .td-header-style-1 .td-header-sp-logo {
+            margin-bottom: 28px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1018px) {
+        .td-header-style-1 .td-header-sp-recs,
+        .td-header-style-1 .td-header-sp-logo {
+            margin-bottom: 14px;
+        }
+    }
+
+    .td-header-style-7 .td-header-top-menu {
+        border-bottom: none;
+    }
+    
+    
+    
+    .sf-menu > .current-menu-item > a:after,
+    .sf-menu > .current-menu-ancestor > a:after,
+    .sf-menu > .current-category-ancestor > a:after,
+    .sf-menu > li:hover > a:after,
+    .sf-menu > .sfHover > a:after,
+    .td_block_mega_menu .td-next-prev-wrap a:hover,
+    .td-mega-span .td-post-category:hover,
+    .td-header-wrap .black-menu .sf-menu > li > a:hover,
+    .td-header-wrap .black-menu .sf-menu > .current-menu-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > .sfHover > a,
+    .td-header-wrap .black-menu .sf-menu > .current-menu-item > a,
+    .td-header-wrap .black-menu .sf-menu > .current-menu-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > .current-category-ancestor > a {
+        background-color: #cc092f;
+    }
+
+
+    .td_block_mega_menu .td-next-prev-wrap a:hover {
+        border-color: #cc092f;
+    }
+
+    .header-search-wrap .td-drop-down-search:before {
+        border-color: transparent transparent #cc092f transparent;
+    }
+
+    .td_mega_menu_sub_cats .cur-sub-cat,
+    .td_mod_mega_menu:hover .entry-title a,
+    .td-theme-wrap .sf-menu ul .td-menu-item > a:hover,
+    .td-theme-wrap .sf-menu ul .sfHover > a,
+    .td-theme-wrap .sf-menu ul .current-menu-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-category-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-menu-item > a {
+        color: #cc092f;
+    }
+    
+    
+    
+    .td-header-wrap .td-header-menu-wrap .sf-menu > li > a,
+    .td-header-wrap .td-header-menu-social .td-social-icon-wrap a,
+    .td-header-style-4 .td-header-menu-social .td-social-icon-wrap i,
+    .td-header-style-5 .td-header-menu-social .td-social-icon-wrap i,
+    .td-header-style-6 .td-header-menu-social .td-social-icon-wrap i,
+    .td-header-style-12 .td-header-menu-social .td-social-icon-wrap i,
+    .td-header-wrap .header-search-wrap #td-header-search-button .td-icon-search {
+        color: #cc092f;
+    }
+    .td-header-wrap .td-header-menu-social + .td-search-wrapper #td-header-search-button:before {
+      background-color: #cc092f;
+    }
+    
+    
+    .td-header-wrap .td-header-menu-wrap.td-affix .sf-menu > li > a,
+    .td-header-wrap .td-affix .td-header-menu-social .td-social-icon-wrap a,
+    .td-header-style-4 .td-affix .td-header-menu-social .td-social-icon-wrap i,
+    .td-header-style-5 .td-affix .td-header-menu-social .td-social-icon-wrap i,
+    .td-header-style-6 .td-affix .td-header-menu-social .td-social-icon-wrap i,
+    .td-header-style-12 .td-affix .td-header-menu-social .td-social-icon-wrap i,
+    .td-header-wrap .td-affix .header-search-wrap .td-icon-search {
+        color: #ffffff;
+    }
+    .td-header-wrap .td-affix .td-header-menu-social + .td-search-wrapper #td-header-search-button:before {
+      background-color: #ffffff;
+    }
+
+    
+    .mfp-content .td-login-button {
+        background-color: #000000;
+    }
+    
+    .mfp-content .td-login-button {
+        color: #ffffff;
+    }
+    
+    .td-banner-wrap-full,
+    .td-header-style-11 .td-logo-wrap-full {
+        background-color: #999999;
+    }
+
+    .td-header-style-11 .td-logo-wrap-full {
+        border-bottom: 0;
+    }
+
+    @media (min-width: 1019px) {
+        .td-header-style-2 .td-header-sp-recs,
+        .td-header-style-5 .td-a-rec-id-header > div,
+        .td-header-style-5 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-6 .td-a-rec-id-header > div,
+        .td-header-style-6 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-7 .td-a-rec-id-header > div,
+        .td-header-style-7 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-8 .td-a-rec-id-header > div,
+        .td-header-style-8 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-12 .td-a-rec-id-header > div,
+        .td-header-style-12 .td-g-rec-id-header > .adsbygoogle {
+            margin-bottom: 24px !important;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1018px) {
+        .td-header-style-2 .td-header-sp-recs,
+        .td-header-style-5 .td-a-rec-id-header > div,
+        .td-header-style-5 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-6 .td-a-rec-id-header > div,
+        .td-header-style-6 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-7 .td-a-rec-id-header > div,
+        .td-header-style-7 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-8 .td-a-rec-id-header > div,
+        .td-header-style-8 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-12 .td-a-rec-id-header > div,
+        .td-header-style-12 .td-g-rec-id-header > .adsbygoogle {
+            margin-bottom: 14px !important;
+        }
+    }
+
+     
+    .td-header-bg:before {
+        background-position: center top;
+    }
+
+    
+    .td-footer-wrapper,
+    .td-footer-wrapper .td_block_template_7 .td-block-title > *,
+    .td-footer-wrapper .td_block_template_17 .td-block-title,
+    .td-footer-wrapper .td-block-title-wrap .td-wrapper-pulldown-filter {
+        background-color: #53565a;
+    }
+
+    
+    .top-header-menu > li > a,
+    .td-weather-top-widget .td-weather-now .td-big-degrees,
+    .td-weather-top-widget .td-weather-header .td-weather-city,
+    .td-header-sp-top-menu .td_data_time {
+        font-family:Montserrat;
+	font-size:16px;
+	font-weight:500;
+	
+    }
+    
+    ul.sf-menu > .td-menu-item > a,
+    .td-theme-wrap .td-header-menu-social {
+        font-family:Montserrat;
+	
+    }
+    
+	.post .td-post-header .entry-title {
+		font-family:Montserrat;
+	
+	}
+    
+    .td-page-title,
+    .woocommerce-page .page-title,
+    .td-category-title-holder .td-page-title {
+    	font-family:Montserrat;
+	font-size:34px;
+	
+    }
+    
+    .td-page-content h1,
+    .wpb_text_column h1 {
+    	font-family:Montserrat;
+	
+    }
+    
+    .td-page-content h2,
+    .wpb_text_column h2 {
+    	font-family:Montserrat;
+	
+    }
+    
+    .td-page-content h3,
+    .wpb_text_column h3 {
+    	font-family:Montserrat;
+	
+    }
+    
+    .td-page-content h4,
+    .wpb_text_column h4 {
+    	font-family:Montserrat;
+	
+    }
+</style>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF7XWD');</script>
+<!-- End Google Tag Manager -->
+<link rel="icon" href="https://cddirector.io/wp-content/uploads/2019/10/CA-Broadcom_Stacked_red-black-3-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://cddirector.io/wp-content/uploads/2019/10/CA-Broadcom_Stacked_red-black-3.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://cddirector.io/wp-content/uploads/2019/10/CA-Broadcom_Stacked_red-black-3.png" />
+<meta name="msapplication-TileImage" content="https://cddirector.io/wp-content/uploads/2019/10/CA-Broadcom_Stacked_red-black-3.png" />
+
+<!-- Button style compiled by theme -->
+
+<style>
+    .tdm-header-style-1.td-header-wrap .td-header-top-menu-full,
+                .tdm-header-style-1.td-header-wrap .top-header-menu .sub-menu,
+                .tdm-header-style-2.td-header-wrap .td-header-top-menu-full,
+                .tdm-header-style-2.td-header-wrap .top-header-menu .sub-menu,
+                .tdm-header-style-3.td-header-wrap .td-header-top-menu-full,
+                .tdm-header-style-3.td-header-wrap .top-header-menu .sub-menu{
+                    background-color: #cc092f;
+                }
+				
+				
+                .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-menu-item > a,
+                .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-menu-ancestor > a,
+                .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-category-ancestor > a,
+                .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > li > a:hover,
+                .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .sfHover > a {
+                  color: #cc092f;
+                }
+                .tdm-menu-active-style4 .tdm-header .sf-menu > .current-menu-item > a,
+                .tdm-menu-active-style4 .tdm-header .sf-menu > .current-menu-ancestor > a,
+                .tdm-menu-active-style4 .tdm-header .sf-menu > .current-category-ancestor > a,
+                .tdm-menu-active-style4 .tdm-header .sf-menu > li > a:hover,
+                .tdm-menu-active-style4 .tdm-header .sf-menu > .sfHover > a {
+                  border-color: #cc092f;
+                }
+                .tdm-menu-active-style5 .tdm-header .td-header-menu-wrap .sf-menu > .current-menu-item > a,
+                .tdm-menu-active-style5 .tdm-header .td-header-menu-wrap .sf-menu > .current-menu-ancestor > a,
+                .tdm-menu-active-style5 .tdm-header .td-header-menu-wrap .sf-menu > .current-category-ancestor > a,
+                .tdm-menu-active-style5 .tdm-header .td-header-menu-wrap .sf-menu > li > a:hover,
+                .tdm-menu-active-style5 .tdm-header .td-header-menu-wrap .sf-menu > .sfHover > a {
+                  background-color: #cc092f;
+                }
+</style>
+
+	<style id="tdw-css-placeholder"></style><script type="text/javascript">(function(){var N=this;N.N2_=N.N2_||{r:[],d:[]},N.N2R=N.N2R||function(){N.N2_.r.push(arguments)},N.N2D=N.N2D||function(){N.N2_.d.push(arguments)}}).call(window);if(!window.n2jQuery){window.n2jQuery={ready:function(cb){console.error('n2jQuery will be deprecated!');N2R(['$'],cb)}}}window.nextend={localization:{},ready:function(cb){console.error('nextend.ready will be deprecated!');N2R('documentReady',function($){cb.call(window,$)})}};nextend.fontsLoaded=false;nextend.fontsLoadedActive=function(){nextend.fontsLoaded=true};var requiredFonts=["Montserrat:n3","Montserrat:n4"],fontData={google:{families:["Montserrat:300,400:latin"]},active:function(){nextend.fontsLoadedActive()},inactive:function(){nextend.fontsLoadedActive()},fontactive:function(f,s){fontData.resolveFont(f+':'+s)},fontinactive:function(f,s){fontData.resolveFont(f+':'+s)},resolveFont:function(n){for(var i=requiredFonts.length-1;i>=0;i--){if(requiredFonts[i]===n){requiredFonts.splice(i,1);break}}if(!requiredFonts.length)nextend.fontsLoadedActive()}};if(typeof WebFontConfig!=='undefined'&&typeof WebFont==='undefined'){var _WebFontConfig=WebFontConfig;for(var k in WebFontConfig){if(k=='active'){fontData.active=function(){nextend.fontsLoadedActive();_WebFontConfig.active()}}else if(k=='inactive'){fontData.inactive=function(){nextend.fontsLoadedActive();_WebFontConfig.inactive()}}else if(k=='fontactive'){fontData.fontactive=function(f,s){fontData.resolveFont(f+':'+s);_WebFontConfig.fontactive.apply(this,arguments)}}else if(k=='fontinactive'){fontData.fontinactive=function(f,s){fontData.resolveFont(f+':'+s);_WebFontConfig.fontinactive.apply(this,arguments)}}else if(k=='google'){if(typeof WebFontConfig.google.families!=='undefined'){for(var i=0;i<WebFontConfig.google.families.length;i++){fontData.google.families.push(WebFontConfig.google.families[i])}}}else{fontData[k]=WebFontConfig[k]}}}fontData.classes=true;fontData.events=true;if(typeof WebFont==='undefined'){window.WebFontConfig=fontData}else{WebFont.load(fontData)}</script><script type="text/javascript" src="https://cddirector.io/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Application/Frontend/Assets/dist/n2.min.js?ver=70fceec4"></script>
+<script type="text/javascript" src="https://cddirector.io/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Application/Frontend/Assets/dist/smartslider-frontend.min.js?ver=70fceec4"></script>
+<script type="text/javascript" src="https://cddirector.io/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Slider/SliderType/Simple/Assets/dist/smartslider-simple-type-frontend.min.js?ver=70fceec4"></script>
+<script type="text/javascript" src="https://cddirector.io/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Slider/SliderType/Simple/Assets/dist/smartslider-backgroundanimation.min.js?ver=70fceec4"></script>
+<script type="text/javascript" src="https://cddirector.io/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Application/Frontend/Assets/dist/nextend-webfontloader.min.js?ver=70fceec4"></script>
+<script type="text/javascript">N2R('documentReady',function($){nextend.fontsDeferred=$.Deferred();if(nextend.fontsLoaded){nextend.fontsDeferred.resolve()}else{nextend.fontsLoadedActive=function(){nextend.fontsLoaded=true;nextend.fontsDeferred.resolve()};var intercalCounter=0;nextend.fontInterval=setInterval(function(){if(intercalCounter>3||document.documentElement.className.indexOf('wf-active')!==-1){nextend.fontsLoadedActive();clearInterval(nextend.fontInterval)}intercalCounter++},1000)}N2R(["documentReady","smartslider-frontend","smartslider-backgroundanimation","smartslider-simple-type-frontend"],function(){new N2Classes.SmartSliderSimple('#n2-ss-3',{"admin":false,"callbacks":"","background.video.mobile":1,"alias":{"id":0,"smoothScroll":0,"slideSwitch":0,"scrollSpeed":400},"align":"normal","isDelayed":0,"load":{"fade":1,"scroll":0},"playWhenVisible":1,"playWhenVisibleAt":0.5,"responsive":{"hideOn":{"desktopLandscape":false,"desktopPortrait":false,"tabletLandscape":false,"tabletPortrait":false,"mobileLandscape":false,"mobilePortrait":false},"onResizeEnabled":true,"type":"auto","downscale":1,"upscale":1,"minimumHeight":0,"maximumSlideWidth":{"desktopLandscape":3000,"desktopPortrait":3000,"tabletLandscape":3000,"tabletPortrait":3000,"mobileLandscape":3000,"mobilePortrait":3000},"forceFull":0,"forceFullOverflowX":"body","forceFullHorizontalSelector":"","constrainRatio":1,"sliderHeightBasedOn":"real","decreaseSliderHeight":0,"focusUser":1,"focusEdge":"auto","breakpoints":[{"device":"tabletPortrait","type":"max-screen-width","portraitWidth":1199,"landscapeWidth":1199},{"device":"mobilePortrait","type":"max-screen-width","portraitWidth":700,"landscapeWidth":900}],"enabledDevices":{"desktopLandscape":0,"desktopPortrait":1,"tabletLandscape":0,"tabletPortrait":1,"mobileLandscape":0,"mobilePortrait":1},"sizes":{"desktopPortrait":{"width":400,"height":200,"max":3000,"min":400},"tabletPortrait":{"width":400,"height":200,"max":1199,"min":400},"mobilePortrait":{"width":320,"height":160,"max":900,"min":320}},"normalizedDeviceModes":{"unknown":"desktopPortrait","desktopPortrait":"desktopPortrait","desktopLandscape":"desktopPortrait","tabletLandscape":"desktopPortrait","tabletPortrait":"tabletPortrait","mobileLandscape":"tabletPortrait","mobilePortrait":"mobilePortrait"},"overflowHiddenPage":0,"focus":{"offsetTop":"#wpadminbar","offsetBottom":""}},"controls":{"mousewheel":0,"touch":"horizontal","keyboard":1,"blockCarouselInteraction":1},"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":1,"start":1,"duration":8000,"autoplayLoop":1,"allowReStart":0,"pause":{"click":0,"mouse":"0","mediaStarted":0},"resume":{"click":0,"mouse":0,"mediaEnded":1,"slidechanged":0},"interval":1,"intervalModifier":"loop","intervalSlide":"current"},"perspective":1500,"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"bgAnimationsColor":"RGBA(51,51,51,1)","bgAnimations":{"global":0,"color":"RGBA(51,51,51,1)","speed":"normal","slides":[{"animation":[{"type":"Flat","tiles":{"crop":true,"delay":0,"sequence":"ForwardDiagonal"},"main":{"type":"both","duration":1,"current":{"ease":"easeOutCubic","scale":0.7},"next":{"ease":"easeOutCubic","left":"100%"}},"invert":{"zIndex":2,"current":{"left":"100%","scale":1},"next":{"scale":0.7,"left":0}}}],"speed":"normal"},{"animation":[{"type":"Flat","tiles":{"crop":true,"delay":0,"sequence":"ForwardDiagonal"},"main":{"type":"both","duration":1,"current":{"ease":"easeOutCubic","scale":0.7},"next":{"ease":"easeOutCubic","left":"100%"}},"invert":{"zIndex":2,"current":{"left":"100%","scale":1},"next":{"scale":0.7,"left":0}}}],"speed":"normal"},{"animation":[{"type":"Flat","tiles":{"crop":true,"delay":0,"sequence":"ForwardDiagonal"},"main":{"type":"both","duration":1,"current":{"ease":"easeOutCubic","scale":0.7},"next":{"ease":"easeOutCubic","left":"100%"}},"invert":{"zIndex":2,"current":{"left":"100%","scale":1},"next":{"scale":0.7,"left":0}}}],"speed":"normal"}]},"mainanimation":{"type":"horizontal","duration":800,"delay":0,"ease":"easeOutQuad","parallax":0,"shiftedBackgroundAnimation":0},"carousel":1,"dynamicHeight":0,"initCallbacks":function($){N2D("SmartSliderWidgetArrowImage","SmartSliderWidget",function(e,i){function r(e,i,t,s,r,o){this.key=e,this.action=t,this.desktopRatio=s,this.tabletRatio=r,this.mobileRatio=o,N2Classes.SmartSliderWidget.prototype.constructor.call(this,i)}return((r.prototype=Object.create(N2Classes.SmartSliderWidget.prototype)).constructor=r).prototype.onStart=function(){this.deferred=e.Deferred(),this.slider.sliderElement.on("SliderDevice",this.onDevice.bind(this)).trigger("addWidget",this.deferred),this.$widget=e("#"+this.slider.elementID+"-arrow-"+this.key).on("click",function(e){e.stopPropagation(),this.slider[this.action]()}.bind(this)),this.$resize=this.$widget.find(".n2-resize"),0===this.$resize.length&&(this.$resize=this.$widget),e.when(this.$widget.n2imagesLoaded(),this.slider.stages.get("ResizeFirst").getDeferred()).always(this.onLoad.bind(this))},r.prototype.onLoad=function(){this.$widget.addClass("n2-ss-widget--calc"),this.previousWidth=this.$resize.width(),this.previousHeight=this.$resize.height(),this.$widget.removeClass("n2-ss-widget--calc"),this.$resize.find("img").css("width","100%"),this.onDevice(null,{device:this.slider.responsive.getDeviceMode()}),this.deferred.resolve()},r.prototype.onDevice=function(e,i){var t=1;switch(i.device){case"tabletPortrait":case"tabletLandscape":t=this.tabletRatio;break;case"mobilePortrait":case"mobileLandscape":t=this.mobileRatio;break;default:t=this.desktopRatio}this.$resize.width(this.previousWidth*t),this.$resize.height(this.previousHeight*t)},function(e,i,t,s){this.key="arrow",this.previous=new r("previous",e,"previousWithDirection",i,t,s),this.next=new r("next",e,"nextWithDirection",i,t,s)}});new N2Classes.SmartSliderWidgetArrowImage(this,1,0.7,0.5);N2D("SmartSliderWidgetBarHorizontal","SmartSliderWidget",function(e,r){"use strict";function t(t,e){this.key="bar",this.parameters=e,N2Classes.SmartSliderWidget.prototype.constructor.call(this,t)}return((t.prototype=Object.create(N2Classes.SmartSliderWidget.prototype)).constructor=t).prototype.onStart=function(t){this.tween=null,this.$widget=this.slider.sliderElement.find(".nextend-bar"),this.innerBar=this.$widget.find("> div");var e="click";this.slider.hasTouch()&&(e="n2click"),this.$widget.on("click",function(t){this.slider.sliderElement.find(".n2-ss-slide-active .n2-ss-layers-container").trigger(e)}.bind(this)),this.slider.stages.done("BeforeShow",this.onBeforeShow.bind(this))},t.prototype.hasContent=function(t){return!(!this.parameters.showTitle||t.getTitle()===r&&!this.parameters.slideCount)||!(!this.parameters.showDescription||t.getDescription()===r&&!this.parameters.slideCount)},t.prototype.onBeforeShow=function(){this.onSliderSwitchTo(null,this.slider.currentSlide),this.parameters.animate?this.slider.sliderElement.on("mainAnimationStart",this.onSliderSwitchToAnimateStart.bind(this)):this.slider.sliderElement.on("SlideWillChange",this.onSliderSwitchTo.bind(this))},t.prototype.renderBarContent=function(t){var e,i,s="";return this.parameters.showTitle&&(t.getTitle()!==r||this.parameters.slideCount)&&(e=this.parameters.slideCount?t.index+1:t.getTitle(),s+='<span class="'+this.parameters.fontTitle+' n2-ow">'+e+"</span>"),this.parameters.showDescription&&(t.getDescription()!==r||this.parameters.slideCount)&&(i=this.parameters.slideCount?t.slider.slides.length:t.getDescription(),s+='<span class="'+this.parameters.fontDescription+' n2-ow">'+(""===s?"":this.parameters.separator)+i+"</span>"),""===s?'<span class="'+this.parameters.fontDescription+' n2-ow">&nbsp;</span>':s},t.prototype.onSliderSwitchTo=function(t,e){var i=this.renderBarContent(e);this.innerBar.html(i),this.setCursor(e.hasLink()),this.slider.widgets.setState("hide.bar",!this.hasContent(e))},t.prototype.onSliderSwitchToAnimateStart=function(){var t=e.Deferred();this.slider.sliderElement.on("mainAnimationComplete.n2Bar",this.onSliderSwitchToAnimateEnd.bind(this,t)),this.tween&&this.tween.pause(),NextendTween.to(this.innerBar,.3,{opacity:0,onComplete:function(){t.resolve()}})},t.prototype.onSliderSwitchToAnimateEnd=function(t,e,i,s,r){this.slider.sliderElement.off(".n2Bar");var n=this.slider.slides[r];t.done(function(){var t=this.innerBar.clone();this.innerBar.remove(),this.innerBar=t.css("opacity",0).html(this.renderBarContent(n)).appendTo(this.$widget),this.setCursor(n.hasLink()),this.slider.widgets.setState("hide.bar",!this.hasContent(n)),this.tween=NextendTween.to(this.innerBar,.3,{opacity:1})}.bind(this))},t.prototype.setCursor=function(t){this.innerBar.css("cursor",t?"pointer":"inherit")},t});new N2Classes.SmartSliderWidgetBarHorizontal(this,{"area":10,"animate":0,"showTitle":1,"fontTitle":"n2-font-fcce1fddc1d903b911854dc0cbaed59a-simple ","slideCount":0,"showDescription":1,"fontDescription":"n2-font-07da7f6a4a6fea2ccd5da7785f6f3289-simple ","separator":" - "})}})})});</script></head>
+
+<body class="home page-template-default page page-id-2 sample-page global-block-template-1 tdb-template td-full-layout" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+        <div class="td-scroll-up"><i class="td-icon-menu-up"></i></div>
+
+    <div class="td-menu-background"></div>
+<div id="td-mobile-nav">
+    <div class="td-mobile-container">
+        <!-- mobile menu top section -->
+        <div class="td-menu-socials-wrap">
+            <!-- socials -->
+            <div class="td-menu-socials">
+                
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://www.linkedin.com/company/broadcom/" title="Linkedin">
+                <i class="td-icon-font td-icon-linkedin"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="mailto:ralf.paschen@broadcom.com" title="Mail">
+                <i class="td-icon-font td-icon-mail-1"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://twitter.com/broadcom" title="Twitter">
+                <i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span>            </div>
+            <!-- close button -->
+            <div class="td-mobile-close">
+                <a href="#"><i class="td-icon-close-mobile"></i></a>
+            </div>
+        </div>
+
+        <!-- login section -->
+        
+        <!-- menu section -->
+        <div class="td-mobile-content">
+            <div class="menu-primary-navigation-container"><ul id="menu-primary-navigation" class="td-mobile-main-menu"><li id="menu-item-720" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-first menu-item-720"><a href="https://cddirector.io/blog/">BLOG</a></li>
+<li id="menu-item-592" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-592"><a href="https://cddirector.io/help/">HELP</a></li>
+<li id="menu-item-591" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-591"><a href="https://cddirector.io/plugins/">PLUGINS</a></li>
+<li id="menu-item-593" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-593"><a href="https://learn.broadcom.com/contact-us">CONTACT</a></li>
+<li id="menu-item-723" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-723"><a href="https://cddirector.io/cdd/sign-in.jsp?task=signup">FREE STARTER EDITION</a></li>
+<li id="menu-item-702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-702"><a href="https://cddirector.io/cdd/sign-in.jsp">LOG IN</a></li>
+</ul></div>        </div>
+    </div>
+
+    <!-- register/login section -->
+            <div id="login-form-mobile" class="td-register-section">
+            
+            <div id="td-login-mob" class="td-login-animation td-login-hide-mob">
+            	<!-- close button -->
+	            <div class="td-login-close">
+	                <a href="#" class="td-back-button"><i class="td-icon-read-down"></i></a>
+	                <div class="td-login-title">Sign in</div>
+	                <!-- close button -->
+		            <div class="td-mobile-close">
+		                <a href="#"><i class="td-icon-close-mobile"></i></a>
+		            </div>
+	            </div>
+	            <div class="td-login-form-wrap">
+	                <div class="td-login-panel-title"><span>Welcome!</span>Log into your account</div>
+	                <div class="td_display_err"></div>
+	                <div class="td-login-inputs"><input class="td-login-input" type="text" name="login_email" id="login_email-mob" value="" required><label>your username</label></div>
+	                <div class="td-login-inputs"><input class="td-login-input" type="password" name="login_pass" id="login_pass-mob" value="" required><label>your password</label></div>
+	                <input type="button" name="login_button" id="login_button-mob" class="td-login-button" value="LOG IN">
+	                <div class="td-login-info-text">
+	                <a href="#" id="forgot-pass-link-mob">Forgot your password?</a>
+	                </div>
+	                <div class="td-login-register-link">
+	                
+	                </div>
+	                
+	                
+
+                </div>
+            </div>
+
+            
+            
+            
+            
+            <div id="td-forgot-pass-mob" class="td-login-animation td-login-hide-mob">
+                <!-- close button -->
+	            <div class="td-forgot-pass-close">
+	                <a href="#" class="td-back-button"><i class="td-icon-read-down"></i></a>
+	                <div class="td-login-title">Password recovery</div>
+	            </div>
+	            <div class="td-login-form-wrap">
+	                <div class="td-login-panel-title">Recover your password</div>
+	                <div class="td_display_err"></div>
+	                <div class="td-login-inputs"><input class="td-login-input" type="text" name="forgot_email" id="forgot_email-mob" value="" required><label>your email</label></div>
+	                <input type="button" name="forgot_button" id="forgot_button-mob" class="td-login-button" value="Send My Pass">
+                </div>
+            </div>
+        </div>
+    </div>    <div class="td-search-background"></div>
+<div class="td-search-wrap-mob">
+	<div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+		<form method="get" class="td-search-form" action="https://cddirector.io/">
+			<!-- close button -->
+			<div class="td-search-close">
+				<a href="#"><i class="td-icon-close-mobile"></i></a>
+			</div>
+			<div role="search" class="td-search-input">
+				<span>Search</span>
+				<input id="td-header-search-mob" type="text" value="" name="s" autocomplete="off" />
+			</div>
+		</form>
+		<div id="td-aj-search-mob"></div>
+	</div>
+</div>
+
+    <div id="td-outer-wrap" class="td-theme-wrap">
+    
+        
+            <div class="tdc-header-wrap ">
+
+            <!--
+Header style multipurpose 3
+-->
+
+
+<div class="td-header-wrap tdm-header tdm-header-style-3 ">
+    
+            <div class="td-header-top-menu-full td-container-wrap ">
+            <div class="td-container td-header-row td-header-top-menu">
+                
+    <div class="top-bar-style-4">
+        <div class="td-header-sp-top-widget">
+    
+    </div>        
+<div class="td-header-sp-top-menu">
+
+
+	<div class="menu-top-container"><ul id="menu-utility-menu" class="top-header-menu"><li id="menu-item-114" class="tryFree menu-item menu-item-type-custom menu-item-object-custom menu-item-first td-menu-item td-normal-menu menu-item-114"><a href="https://cddirector.io/cdd/sign-in.jsp?task=signup">Free Starter Edition</a></li>
+<li id="menu-item-512" class="logIn menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-512"><a href="https://cddirector.io/cdd/sign-in.jsp?task=login">Log In</a></li>
+</ul></div></div>
+    </div>
+
+<!-- LOGIN MODAL -->
+
+                <div  id="login-form" class="white-popup-block mfp-hide mfp-with-anim">
+                    <div class="td-login-wrap">
+                        <a href="#" class="td-back-button"><i class="td-icon-modal-back"></i></a>
+                        <div id="td-login-div" class="td-login-form-div td-display-block">
+                            <div class="td-login-panel-title">Sign in</div>
+                            <div class="td-login-panel-descr">Welcome! Log into your account</div>
+                            <div class="td_display_err"></div>
+                            <div class="td-login-inputs"><input class="td-login-input" type="text" name="login_email" id="login_email" value="" required><label>your username</label></div>
+	                        <div class="td-login-inputs"><input class="td-login-input" type="password" name="login_pass" id="login_pass" value="" required><label>your password</label></div>
+                            <input type="button" name="login_button" id="login_button" class="wpb_button btn td-login-button" value="Login">
+                            <div class="td-login-info-text"><a href="#" id="forgot-pass-link">Forgot your password? Get help</a></div>
+                            
+                            
+                            
+                            
+                        </div>
+
+                        
+
+                         <div id="td-forgot-pass-div" class="td-login-form-div td-display-none">
+                            <div class="td-login-panel-title">Password recovery</div>
+                            <div class="td-login-panel-descr">Recover your password</div>
+                            <div class="td_display_err"></div>
+                            <div class="td-login-inputs"><input class="td-login-input" type="text" name="forgot_email" id="forgot_email" value="" required><label>your email</label></div>
+                            <input type="button" name="forgot_button" id="forgot_button" class="wpb_button btn td-login-button" value="Send My Password">
+                            <div class="td-login-info-text">A password will be e-mailed to you.</div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                            </div>
+        </div>
+    
+    <div class="td-header-menu-wrap-full td-container-wrap ">
+        <div class="td-header-menu-wrap td-header-gradient td-header-menu-no-search">
+            <div class="td-container td-header-row td-header-main-menu">
+                <div class="tdm-menu-btns-socials">
+            <div class="header-search-wrap">
+            <div class="td-search-btns-wrap">
+                <a id="td-header-search-button" href="#" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+                <a id="td-header-search-button-mob" href="#" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+            </div>
+
+            <div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+                <form method="get" class="td-search-form" action="https://cddirector.io/">
+                    <div role="search" class="td-head-form-search-wrap">
+                        <input id="td-header-search" type="text" value="" name="s" autocomplete="off" /><input class="wpb_button wpb_btn-inverse btn" type="submit" id="td-header-search-top" value="Search" />
+                    </div>
+                </form>
+                <div id="td-aj-search"></div>
+            </div>
+        </div>
+    
+    
+    </div>
+
+<div id="td-header-menu" role="navigation">
+    <div id="td-top-mobile-toggle"><a href="#"><i class="td-icon-font td-icon-mobile"></i></a></div>
+    <div class="td-main-menu-logo td-logo-in-menu">
+        		<a class="td-mobile-logo td-sticky-disable" href="https://cddirector.io/">
+			<img src="https://cddirector.io/wp-content/uploads/2019/10/CA-Broadcom_Horizontal_red-white-1.png" alt=""/>
+		</a>
+	<h1 class="td-logo">			<a class="td-header-logo td-sticky-disable" href="https://cddirector.io/">
+				<img src="https://cddirector.io/wp-content/uploads/2019/10/CA-Broadcom_Horizontal_red-black.png" alt=""/>
+				<span class="td-visual-hidden">Continuous Delivery Director</span>
+			</a>
+		</h1>    </div>
+    <div class="menu-primary-navigation-container"><ul id="menu-primary-navigation-1" class="sf-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-first td-menu-item td-normal-menu menu-item-720"><a href="https://cddirector.io/blog/">BLOG</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-592"><a href="https://cddirector.io/help/">HELP</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-591"><a href="https://cddirector.io/plugins/">PLUGINS</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-593"><a href="https://learn.broadcom.com/contact-us">CONTACT</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-723"><a href="https://cddirector.io/cdd/sign-in.jsp?task=signup">FREE STARTER EDITION</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-702"><a href="https://cddirector.io/cdd/sign-in.jsp">LOG IN</a></li>
+</ul></div></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+            </div>
+
+            
+        
+            <div class="td-main-content-wrap td-main-page-wrap td-container-wrap">
+                <div class="tdc-content-wrap">
+                    <div id="td_uid_1_603cde1b23dc8" class="tdc-zone"><div class="tdc_zone td_uid_1_603cde1b23dd4_rand  wpb_row td-pb-row"  >
+<style scoped>
+
+/* custom css */
+.td_uid_1_603cde1b23dd4_rand {
+                    min-height: 0;
+                }
+</style><div id="td_uid_2_603cde1b242f4" class="tdc-row"><div class="vc_row td_uid_2_603cde1b242fb_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_2_603cde1b242fb_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_3_603cde1b24542_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_3_603cde1b24542_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_4_603cde1b24684_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_4_603cde1b24684" >
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_4_603cde1b24684_rand{
+margin-top:50px !important;
+margin-left:25px !important;
+}
+
+</style>
+<style>
+/* custom css */
+.td_uid_4_603cde1b24684_rand h1,
+				.td_uid_4_603cde1b24684_rand h2,
+				.td_uid_4_603cde1b24684_rand h3,
+				.td_uid_4_603cde1b24684_rand h4,
+				.td_uid_4_603cde1b24684_rand h5,
+				.td_uid_4_603cde1b24684_rand h6 {
+			        color: #cc092f;
+		        }
+</style><div class="td-block-title-wrap"></div><div class="td-fix-index"><h1>Continuous Delivery Director</h1>
+</div></div></div></div></div></div><div id="td_uid_4_603cde1b269e3" class="tdc-row"><div class="vc_row td_uid_5_603cde1b269e9_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_5_603cde1b269e9_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_6_603cde1b26c24_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_6_603cde1b26c24_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="wpb_wrapper td_block_separator td_block_wrap vc_separator td_uid_7_603cde1b26d0c_rand  td_separator_solid td_separator_center"><span style="border-color:#EBEBEB;border-width:2px;width:100%;"></span>
+<style scoped>
+
+/* inline tdc_css att */
+
+.td_uid_7_603cde1b26d0c_rand{
+margin-top:20px !important;
+}
+
+</style></div></div></div></div></div><div id="td_uid_7_603cde1b26d4b" class="tdc-row"><div class="vc_row td_uid_8_603cde1b26d4d_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_8_603cde1b26d4d_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_9_603cde1b26f15_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_9_603cde1b26f15_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_10_603cde1b27037_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_10_603cde1b27037" >
+<style>
+/* custom css */
+.td_uid_10_603cde1b27037_rand h1,
+				.td_uid_10_603cde1b27037_rand h2,
+				.td_uid_10_603cde1b27037_rand h3,
+				.td_uid_10_603cde1b27037_rand h4,
+				.td_uid_10_603cde1b27037_rand h5,
+				.td_uid_10_603cde1b27037_rand h6 {
+			        color: #cc092f;
+		        }
+</style><div class="td-block-title-wrap"></div><div class="td-fix-index"><h2 style="text-align: center;"><strong>RELEASE WITH CONFIDENCE</strong></h2>
+<div>
+<div><div class="n2-section-smartslider fitvidsignore " role="region" aria-label="Slider"><style>div#n2-ss-3{width:400px;}div#n2-ss-3 .n2-ss-slider-1{position:relative;}div#n2-ss-3 .n2-ss-slider-background-video-container{position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;}div#n2-ss-3 .n2-ss-slider-2{position:relative;overflow:hidden;padding:0px 0px 0px 0px;height:200px;border:0px solid RGBA(62,62,62,1);border-radius:0px;background-clip:padding-box;background-repeat:repeat;background-position:50% 50%;background-size:cover;background-attachment:scroll;}div#n2-ss-3.n2-ss-mobileLandscape .n2-ss-slider-2,div#n2-ss-3.n2-ss-mobilePortrait .n2-ss-slider-2{background-attachment:scroll;}div#n2-ss-3 .n2-ss-slider-3{position:relative;width:100%;height:100%;overflow:hidden;outline:1px solid rgba(0,0,0,0);z-index:10;}div#n2-ss-3 .n2-ss-slide-backgrounds,div#n2-ss-3 .n2-ss-slider-3 > .n-particles-js-canvas-el,div#n2-ss-3 .n2-ss-slider-3 > .n2-ss-divider{position:absolute;left:0;top:0;width:100%;height:100%;}div#n2-ss-3 .n2-ss-slide-backgrounds{z-index:10;}div#n2-ss-3 .n2-ss-slider-3 > .n-particles-js-canvas-el{z-index:12;}div#n2-ss-3 .n2-ss-slide-backgrounds > *{overflow:hidden;}div#n2-ss-3 .n2-ss-slide{position:absolute;top:0;left:0;width:100%;height:100%;z-index:20;display:block;-webkit-backface-visibility:hidden;}div#n2-ss-3 .n2-ss-layers-container{position:relative;width:400px;height:200px;}div#n2-ss-3 .n2-ss-parallax-clip > .n2-ss-layers-container{position:absolute;right:0;}div#n2-ss-3 .n2-ss-slide{perspective:1500px;}div#n2-ss-3[data-ie] .n2-ss-slide{perspective:none;transform:perspective(1500px);}div#n2-ss-3 .n2-ss-slide-active{z-index:21;}div#n2-ss-3 .nextend-arrow{cursor:pointer;overflow:hidden;line-height:0 !important;z-index:20;}div#n2-ss-3 .nextend-arrow img{position:relative;min-height:0;min-width:0;vertical-align:top;width:auto;height:auto;max-width:100%;max-height:100%;display:inline;}div#n2-ss-3 .nextend-arrow img.n2-arrow-hover-img{display:none;}div#n2-ss-3 .nextend-arrow:HOVER img.n2-arrow-hover-img{display:inline;}div#n2-ss-3 .nextend-arrow:HOVER img.n2-arrow-normal-img{display:none;}div#n2-ss-3 .nextend-arrow-animated{overflow:hidden;}div#n2-ss-3 .nextend-arrow-animated > div{position:relative;}div#n2-ss-3 .nextend-arrow-animated .n2-active{position:absolute;}div#n2-ss-3 .nextend-arrow-animated-fade{transition:background 0.3s, opacity 0.4s;}div#n2-ss-3 .nextend-arrow-animated-horizontal > div{transition:all 0.4s;left:0;}div#n2-ss-3 .nextend-arrow-animated-horizontal .n2-active{top:0;}div#n2-ss-3 .nextend-arrow-previous.nextend-arrow-animated-horizontal:HOVER > div,div#n2-ss-3 .nextend-arrow-previous.nextend-arrow-animated-horizontal:FOCUS > div,div#n2-ss-3 .nextend-arrow-next.nextend-arrow-animated-horizontal .n2-active{left:-100%;}div#n2-ss-3 .nextend-arrow-previous.nextend-arrow-animated-horizontal .n2-active,div#n2-ss-3 .nextend-arrow-next.nextend-arrow-animated-horizontal:HOVER > div,div#n2-ss-3 .nextend-arrow-next.nextend-arrow-animated-horizontal:FOCUS > div{left:100%;}div#n2-ss-3 .nextend-arrow.nextend-arrow-animated-horizontal:HOVER .n2-active,div#n2-ss-3 .nextend-arrow.nextend-arrow-animated-horizontal:FOCUS .n2-active{left:0;}div#n2-ss-3 .nextend-arrow-animated-vertical > div{transition:all 0.4s;top:0;}div#n2-ss-3 .nextend-arrow-animated-vertical .n2-active{left:0;}div#n2-ss-3 .nextend-arrow-animated-vertical .n2-active{top:-100%;}div#n2-ss-3 .nextend-arrow-animated-vertical:HOVER > div,div#n2-ss-3 .nextend-arrow-animated-vertical:FOCUS > div{top:100%;}div#n2-ss-3 .nextend-arrow-animated-vertical:HOVER .n2-active,div#n2-ss-3 .nextend-arrow-animated-vertical:FOCUS .n2-active{top:0;}div#n2-ss-3 .nextend-bar-horizontal div *{display:inline;}div#n2-ss-3 .n2-style-1b3b0b26e4e995bc76516f476918c4ab-simple{background: RGBA(0,0,0,0.67);opacity:1;padding:20px 20px 20px 20px ;box-shadow: none;border-width: 0px;border-style: solid;border-color: #000000; border-color: RGBA(0,0,0,1);border-radius:0px;}div#n2-ss-3 .n2-font-fcce1fddc1d903b911854dc0cbaed59a-simple{font-family: 'Montserrat';color: #ffffff;font-size:87.5%;text-shadow: none;line-height: 1.3;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;vertical-align: middle;}div#n2-ss-3 .n2-font-07da7f6a4a6fea2ccd5da7785f6f3289-simple{font-family: 'Montserrat';color: #ffffff;font-size:87.5%;text-shadow: none;line-height: 1.3;font-weight: normal;font-style: italic;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;vertical-align: middle;}</style><div id="n2-ss-3-align" class="n2-ss-align"><div class="n2-padding"><div id="n2-ss-3" data-creator="Smart Slider 3" class="n2-ss-slider n2-ow n2-has-hover n2notransition  n2-ss-load-fade " style="font-size: 1rem;" data-fontsize="16">
+        <div class="n2-ss-slider-1 n2_ss__touch_element n2-ow" style="">
+            <div class="n2-ss-slider-2 n2-ow" style="">
+                                                    <div class="n2-ss-background-animation n2-ow"></div>
+                                <div class="n2-ss-slider-3 n2-ow" style="">
+
+                    <div class="n2-ss-slide-backgrounds"></div><div data-first="1" data-slide-duration="0" data-id="4" data-title="Release with Confidence  - New release scoring protects from bad deployments and low quality" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-4"><div class="n2-ss-slide-background n2-ow" data-mode="fill"><div data-hash="df968571f50cb5c9ceea47f935153415" data-desktop="//cddirector.io/wp-content/uploads/slider3/release-with-confident.png" class="n2-ss-slide-background-image" data-blur="0" data-alt="" data-title=""></div></div><div class="n2-ss-layers-container n2-ow"><div class="n2-ss-layer n2-ow" style="padding:0px 0px 0px 0px;" data-desktopportraitpadding="0|*|0|*|0|*|0" data-sstype="slide" data-csstextalign="center" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-16562df3723fd" style="overflow:visible;" data-csstextalign="inherit" data-has-maxwidth="0" data-desktopportraitmaxwidth="0" data-cssselfalign="inherit" data-desktopportraitselfalign="inherit" data-pm="default" data-desktopportraitverticalalign="center" data-desktopportraitpadding="10|*|10|*|10|*|10|*|px+" data-desktopportraitinneralign="inherit" data-sstype="content" data-hasbackground="0" data-rotation="0" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-adaptivefont="1" data-desktopportraitfontsize="160" data-plugin="rendered"><div class="n2-ss-section-main-content n2-ss-layer-content n2-ow n-uc-16562df3723fd-inner" style="padding:0.390625em 0.390625em 0.390625em 0.390625em ;" data-verticalalign="center"><div class="n2-ss-layer n2-ow" style="margin:0em 0em 0em 0em ;overflow:visible;" data-pm="normal" data-desktopportraitmargin="0|*|0|*|0|*|0|*|px+" data-desktopportraitheight="0" data-has-maxwidth="0" data-desktopportraitmaxwidth="0" data-cssselfalign="inherit" data-desktopportraitselfalign="inherit" data-sstype="layer" data-rotation="0" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-adaptivefont="0" data-desktopportraitfontsize="100" data-plugin="rendered"><div class=" n2-ss-img-wrapper n2-ss-img-crop n2-ss-item-content n2-ow"><img src="//cddirector.io/wp-content/uploads/2020/11/CDD-Release-Score-Screenshot-2.png" id="n2-ss-3item1" alt="" style="display: inline-block; max-width: 100%; width: auto;height: auto;" class=" n2-ow" data-no-lazy="1" data-hack="data-lazy-src" /></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="5" data-title="Adaptive Testing Report" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-5"><div class="n2-ss-slide-background n2-ow" data-mode="fill"><div data-hash="40d4c8407583518f4c3b5a3ac165cf81" data-desktop="//cddirector.io/wp-content/uploads/2020/11/Release-new-UI.jpg" class="n2-ss-slide-background-image" data-blur="0" data-alt="" data-title=""></div></div><div class="n2-ss-layers-container n2-ow"><div class="n2-ss-layer n2-ow" style="padding:0px 0px 0px 0px;" data-desktopportraitpadding="0|*|0|*|0|*|0" data-sstype="slide" data-csstextalign="center" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-17c182e798f1f" style="overflow:visible;" data-csstextalign="inherit" data-has-maxwidth="0" data-desktopportraitmaxwidth="0" data-cssselfalign="inherit" data-desktopportraitselfalign="inherit" data-pm="default" data-desktopportraitverticalalign="center" data-desktopportraitpadding="10|*|10|*|10|*|10|*|px+" data-desktopportraitinneralign="inherit" data-sstype="content" data-hasbackground="0" data-rotation="0" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-adaptivefont="1" data-desktopportraitfontsize="100" data-plugin="rendered"><div class="n2-ss-section-main-content n2-ss-layer-content n2-ow n-uc-17c182e798f1f-inner" style="padding:0.625em 0.625em 0.625em 0.625em ;" data-verticalalign="center"><div class="n2-ss-layer n2-ow" style="margin:0em 0em 0em 0em ;overflow:visible;" data-pm="normal" data-desktopportraitmargin="0|*|0|*|0|*|0|*|px+" data-desktopportraitheight="0" data-has-maxwidth="0" data-desktopportraitmaxwidth="0" data-cssselfalign="inherit" data-desktopportraitselfalign="inherit" data-sstype="layer" data-rotation="0" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-adaptivefont="0" data-desktopportraitfontsize="100" data-plugin="rendered"><div class=" n2-ss-img-wrapper n2-ss-img-crop n2-ss-item-content n2-ow"><img src="//cddirector.io/wp-content/uploads/2020/11/CDD-Test-Advisor-Summary.png" id="n2-ss-3item2" alt="" style="display: inline-block; max-width: 100%; width: auto;height: auto;" class=" n2-ow" data-no-lazy="1" data-hack="data-lazy-src" /></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="6" data-title="Complete visibility and actionable insights" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-6"><div class="n2-ss-slide-background n2-ow" data-mode="fill"><div data-hash="17149bd68147b03b4537f2f31426ba26" data-desktop="//cddirector.io/wp-content/uploads/slider3/dashboard-2.png" class="n2-ss-slide-background-image" data-blur="0" data-alt="" data-title=""></div></div><div class="n2-ss-layers-container n2-ow"><div class="n2-ss-layer n2-ow" style="padding:0px 0px 0px 0px;" data-desktopportraitpadding="0|*|0|*|0|*|0" data-sstype="slide" data-csstextalign="center" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-13582c3d6a0a9" style="overflow:visible;" data-csstextalign="inherit" data-has-maxwidth="0" data-desktopportraitmaxwidth="0" data-cssselfalign="inherit" data-desktopportraitselfalign="inherit" data-pm="default" data-desktopportraitverticalalign="center" data-desktopportraitpadding="10|*|10|*|10|*|10|*|px+" data-desktopportraitinneralign="inherit" data-sstype="content" data-hasbackground="0" data-rotation="0" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-adaptivefont="1" data-desktopportraitfontsize="100" data-plugin="rendered"><div class="n2-ss-section-main-content n2-ss-layer-content n2-ow n-uc-13582c3d6a0a9-inner" style="padding:0.625em 0.625em 0.625em 0.625em ;" data-verticalalign="center"><div class="n2-ss-layer n2-ow" style="margin:0em 0em 0em 0em ;overflow:visible;" data-pm="normal" data-desktopportraitmargin="0|*|0|*|0|*|0|*|px+" data-desktopportraitheight="0" data-has-maxwidth="0" data-desktopportraitmaxwidth="0" data-cssselfalign="inherit" data-desktopportraitselfalign="inherit" data-sstype="layer" data-rotation="0" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-adaptivefont="0" data-desktopportraitfontsize="100" data-plugin="rendered"><div class=" n2-ss-img-wrapper n2-ss-img-crop n2-ss-item-content n2-ow"><img src="//cddirector.io/wp-content/uploads/2020/11/CDD-Release-Quality-Report.png" id="n2-ss-3item3" alt="" style="display: inline-block; max-width: 100%; width: auto;height: auto;" class=" n2-ow" data-no-lazy="1" data-hack="data-lazy-src" /></div></div></div></div></div></div></div>                </div>
+            </div>
+            <div data-ssleft="0+15" data-sstop="sliderHeight/2-previousheight/2" id="n2-ss-3-arrow-previous" class="n2-ss-widget n2-ss-widget-hide-mobileportrait nextend-arrow n2-ow nextend-arrow-previous  nextend-arrow-animated-fade n2-ib" style="position: absolute;" role="button" aria-label="previous arrow" tabindex="0"><img class="n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xMS40MzMgMTUuOTkyTDIyLjY5IDUuNzEyYy4zOTMtLjM5LjM5My0xLjAzIDAtMS40Mi0uMzkzLS4zOS0xLjAzLS4zOS0xLjQyMyAwbC0xMS45OCAxMC45NGMtLjIxLjIxLS4zLjQ5LS4yODUuNzYtLjAxNS4yOC4wNzUuNTYuMjg0Ljc3bDExLjk4IDEwLjk0Yy4zOTMuMzkgMS4wMy4zOSAxLjQyNCAwIC4zOTMtLjQuMzkzLTEuMDMgMC0xLjQybC0xMS4yNTctMTAuMjkiCiAgICAgICAgICBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjgiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPgo8L3N2Zz4=" alt="previous arrow" /></div>
+<div data-ssright="0+15" data-sstop="sliderHeight/2-nextheight/2" id="n2-ss-3-arrow-next" class="n2-ss-widget n2-ss-widget-hide-mobileportrait nextend-arrow n2-ow nextend-arrow-next  nextend-arrow-animated-fade n2-ib" style="position: absolute;" role="button" aria-label="next arrow" tabindex="0"><img class="n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xMC43MjIgNC4yOTNjLS4zOTQtLjM5LTEuMDMyLS4zOS0xLjQyNyAwLS4zOTMuMzktLjM5MyAxLjAzIDAgMS40MmwxMS4yODMgMTAuMjgtMTEuMjgzIDEwLjI5Yy0uMzkzLjM5LS4zOTMgMS4wMiAwIDEuNDIuMzk1LjM5IDEuMDMzLjM5IDEuNDI3IDBsMTIuMDA3LTEwLjk0Yy4yMS0uMjEuMy0uNDkuMjg0LS43Ny4wMTQtLjI3LS4wNzYtLjU1LS4yODYtLjc2TDEwLjcyIDQuMjkzeiIKICAgICAgICAgIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuOCIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPg==" alt="next arrow" /></div>
+<div data-ssleft="sliderWidth/2-barwidth/2" data-offset="0" class="n2-ss-widget nextend-bar nextend-bar-horizontal n2-ow" style="position: absolute;bottom:0px;text-align: center;width:100%;"><div class="n2-style-1b3b0b26e4e995bc76516f476918c4ab-simple  n2-ow" style=""></div></div>
+        </div>
+        </div><div id="n2-ss-3-spinner" style="display: none;"><div><div class="n2-ss-spinner-simple-white-container"><div class="n2-ss-spinner-simple-white"></div></div></div></div></div></div><div class="n2_clear"></div><div id="n2-ss-3-placeholder" style="position: relative;z-index:2;background-color:RGBA(0,0,0,0); background-color:RGBA(255,255,255,0);"><img style="width: 100%; max-width:3000px; display: block;opacity:0;margin:0px;" class="n2-ow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiA+PC9zdmc+" alt="Slider" /></div></div></div>
+</div>
+</div></div></div></div></div></div><div id="td_uid_9_603cde1b2b742" class="tdc-row"><div class="vc_row td_uid_11_603cde1b2b74a_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_11_603cde1b2b74a_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_12_603cde1b2b988_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_12_603cde1b2b988_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_button td_uid_13_603cde1b2bbd1_rand tdm-block-button-full tdm-content-horiz-center td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_13_603cde1b2bbd1"     >
+<style>
+body .td_uid_14_603cde1b2c6c4 {
+					background-color: #cc092f;
+				}
+				
+				.td_uid_14_603cde1b2c6c4 i:last-child {
+					margin-left: 25px;
+				}
+</style><div class="tds-button td-fix-index"><a 
+                href="https://www.youtube.com/watch?v=vflKhEL0ld0" 
+                class="tds-button1 tdm-btn tdm-btn-lg td_uid_14_603cde1b2c6c4"  target="_blank" ><span class="tdm-btn-text">Release with Confidence</span><i class="tdc-font-fa tdc-font-fa-play"></i></a></div></div></div></div><div class="vc_column td_uid_15_603cde1b2cbc1_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_15_603cde1b2cbc1_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_button td_uid_16_603cde1b2cc9a_rand tdm-block-button-full tdm-content-horiz-center td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_16_603cde1b2cc9a"     >
+<style>
+body .td_uid_17_603cde1b2d41b {
+					background-color: #cc092f;
+				}
+				
+				.td_uid_17_603cde1b2d41b i:last-child {
+					margin-left: 25px;
+				}
+</style><div class="tds-button td-fix-index"><a 
+                href="https://www.youtube.com/watch?v=oWQF5mQ2VkQ" 
+                class="tds-button1 tdm-btn tdm-btn-lg td_uid_17_603cde1b2d41b"  target="_blank" ><span class="tdm-btn-text">Release Scoring</span><i class="tdc-font-fa tdc-font-fa-play"></i></a></div></div></div></div><div class="vc_column td_uid_18_603cde1b2d80f_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_18_603cde1b2d80f_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_button td_uid_19_603cde1b2d8d2_rand tdm-block-button-full tdm-content-horiz-center td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_19_603cde1b2d8d2"     >
+<style>
+body .td_uid_20_603cde1b2dfd6 {
+					background-color: #cc092f;
+				}
+				
+				.td_uid_20_603cde1b2dfd6 i:last-child {
+					margin-left: 25px;
+				}
+</style><div class="tds-button td-fix-index"><a 
+                href="https://youtu.be/No5VFkOI534 " 
+                class="tds-button1 tdm-btn tdm-btn-lg td_uid_20_603cde1b2dfd6"  target="_blank" ><span class="tdm-btn-text">Protecting Environments</span><i class="tdc-font-fa tdc-font-fa-play"></i></a></div></div></div></div></div></div><div id="td_uid_13_603cde1b2e3c0" class="tdc-row"><div class="vc_row td_uid_21_603cde1b2e3c4_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_21_603cde1b2e3c4_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_22_603cde1b2e5ab_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_22_603cde1b2e5ab_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"></div></div><div class="vc_column td_uid_23_603cde1b2e608_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_23_603cde1b2e608_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"></div></div><div class="vc_column td_uid_24_603cde1b2e650_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_24_603cde1b2e650_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"></div></div></div></div><div id="td_uid_17_603cde1b2e69d" class="tdc-row"><div class="vc_row td_uid_25_603cde1b2e69f_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_25_603cde1b2e69f_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_26_603cde1b2e807_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_26_603cde1b2e807_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"></div></div><div class="vc_column td_uid_27_603cde1b2e853_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_27_603cde1b2e853_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"></div></div></div></div><div id="td_uid_20_603cde1b2e89e" class="tdc-row"><div class="vc_row td_uid_28_603cde1b2e8a0_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_28_603cde1b2e8a0_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_29_603cde1b2ea4f_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_29_603cde1b2ea4f_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_30_603cde1b2eb6e_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_30_603cde1b2eb6e" >
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_30_603cde1b2eb6e_rand{
+padding-left:85px !important;
+}
+
+</style><div class="td-block-title-wrap"></div><div class="td-fix-index"><p>&nbsp;</p>
+<h2 style="text-align: center;"></h2>
+<p style="text-align: center;"><div id="image-map-pro-33"></div></p>
+</div></div><div class="tdm_block td_block_wrap tdm_block_button td_uid_31_603cde1b2fedb_rand tdm-block-button-full tdm-content-horiz-center td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_31_603cde1b2fedb"     >
+<style>
+body .td_uid_32_603cde1b3066a {
+					background-color: #cc092f;
+				}
+				
+				.td_uid_32_603cde1b3066a i:last-child {
+					margin-left: 16px;
+				}
+</style><div class="tds-button td-fix-index"><a 
+                href="https://www.automation.ai/" 
+                class="tds-button1 tdm-btn tdm-btn-xlg td_uid_32_603cde1b3066a"  target="_blank" ><span class="tdm-btn-text">BizOps from Broadcom - Data Driven Decisions. Done Right.</span><i class="tdc-font-fa tdc-font-fa-arrow-right"></i></a></div></div></div></div></div></div><div id="td_uid_22_603cde1b30a6a" class="tdc-row"><div class="vc_row td_uid_33_603cde1b30a6e_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_33_603cde1b30a6e_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_34_603cde1b30bd9_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_34_603cde1b30bd9_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"></div></div></div></div><div id="td_uid_24_603cde1b30c31" class="tdc-row"><div class="vc_row td_uid_35_603cde1b30c33_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_35_603cde1b30c33_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_36_603cde1b30dd5_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_36_603cde1b30dd5_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="vc_row_inner td_uid_37_603cde1b30ea4_rand  vc_row vc_inner wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_37_603cde1b30ea4_rand {
+                    position: relative !important;
+                    top: 0;
+                    transform: none;
+                    -webkit-transform: none;
+                }
+</style><div class="vc_column_inner td_uid_38_603cde1b30ff4_rand  wpb_column vc_column_container tdc-inner-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_38_603cde1b30ff4_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="vc_column-inner"><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_button td_uid_39_603cde1b310b1_rand tdm-block-button-inline tdm-content-horiz-left td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_39_603cde1b310b1"     ></div></div></div></div><div class="vc_column_inner td_uid_40_603cde1b31814_rand  wpb_column vc_column_container tdc-inner-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_40_603cde1b31814_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="vc_column-inner"><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_button td_uid_41_603cde1b318cc_rand tdm-block-button-inline tdm-content-horiz-left td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_41_603cde1b318cc"     ></div></div></div></div><div class="vc_column_inner td_uid_42_603cde1b31fb0_rand  wpb_column vc_column_container tdc-inner-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_42_603cde1b31fb0_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></div></div></div></div><div id="td_uid_30_603cde1b32039" class="tdc-row stretch_row_1200 td-stretch-content"><div class="vc_row td_uid_43_603cde1b3203c_rand  wpb_row td-pb-row tdc-element-style" >
+<style scoped>
+
+/* custom css */
+.td_uid_43_603cde1b3203c_rand {
+                    min-height: 0;
+                }
+                
+                
+                 .td_uid_43_603cde1b3203c_rand > .td-element-style:after {
+                    content: '' !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                    position: absolute !important;
+                    top: 0 !important;
+                    left: 0 !important;
+                    z-index: 0 !important;
+                    display: block !important;
+                    background-color: #000000 !important;
+                }
+/* inline tdc_css att */
+
+.td_uid_43_603cde1b3203c_rand{
+padding-top:20px !important;
+padding-bottom:20px !important;
+}
+
+.td_uid_43_603cde1b3203c_rand .td_block_wrap{ text-align:left }
+
+</style>
+<div class="td_uid_30_603cde1b32039_rand_style td-element-style" ></div><div class="vc_column td_uid_44_603cde1b321ed_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_44_603cde1b321ed_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_button td_uid_45_603cde1b32292_rand tdm-content-horiz-center td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_45_603cde1b32292"     >
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_45_603cde1b32292_rand{
+padding-top:20px !important;
+padding-bottom:20px !important;
+}
+
+</style>
+<style>
+body .td_uid_46_603cde1b32969 {
+					background-color: #cc092f;
+				}
+				
+				.td_uid_46_603cde1b32969 i:last-child {
+					margin-left: 14px;
+				}
+</style><div class="tds-button td-fix-index"><a 
+                href="https://cddirector.io/cdd/sign-in.jsp?task=signup" 
+                class="tds-button1 tdm-btn tdm-btn-lg td_uid_46_603cde1b32969" ><span class="tdm-btn-text">Free Starter Edition</span><i class="tdc-font-fa tdc-font-fa-download"></i></a></div></div></div></div><div class="vc_column td_uid_47_603cde1b32d2a_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_47_603cde1b32d2a_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_button td_uid_48_603cde1b32de0_rand tdm-content-horiz-center td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_48_603cde1b32de0"     >
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_48_603cde1b32de0_rand{
+padding-top:20px !important;
+padding-bottom:20px !important;
+}
+
+</style>
+<style>
+body .td_uid_49_603cde1b335d2 {
+					background-color: #cc092f;
+				}
+				
+				.td_uid_49_603cde1b335d2 i:last-child {
+					margin-left: 14px;
+				}
+</style><div class="tds-button td-fix-index"><a 
+                href="https://www.youtube.com/embed/MagQ0rwsF3w" 
+                class="tds-button1 tdm-btn tdm-btn-lg td_uid_49_603cde1b335d2"  target="_blank" ><span class="tdm-btn-text">See How in a Minute</span><i class="tdc-font-fa tdc-font-fa-chevron-circle-right"></i></a></div></div></div></div></div></div><div id="td_uid_33_603cde1b33ad9" class="tdc-row stretch_row"><div class="vc_row td_uid_50_603cde1b33ae0_rand  wpb_row td-pb-row tdc-element-style" >
+<style scoped>
+
+/* custom css */
+.td_uid_50_603cde1b33ae0_rand {
+                    min-height: 0;
+                }
+                
+                
+                 .td_uid_50_603cde1b33ae0_rand > .td-element-style:after {
+                    content: '' !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                    position: absolute !important;
+                    top: 0 !important;
+                    left: 0 !important;
+                    z-index: 0 !important;
+                    display: block !important;
+                    background-color: #ffffff !important;
+                }
+/* inline tdc_css att */
+
+.td_uid_50_603cde1b33ae0_rand{
+padding-top:50px !important;
+}
+
+.td_uid_50_603cde1b33ae0_rand .td_block_wrap{ text-align:left }
+
+</style>
+<div class="td_uid_33_603cde1b33ad9_rand_style td-element-style" ></div><div class="vc_column td_uid_51_603cde1b33d90_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_51_603cde1b33d90_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+.td_uid_51_603cde1b33d90_rand{
+margin-bottom:25px !important;
+}
+
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_52_603cde1b33feb_rand tdm-content-horiz-center td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_52_603cde1b33feb" ><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body .td_uid_53_603cde1b3476b .tdm-title {
+					color: #cc092f;
+				}
+				
+				.td_uid_53_603cde1b3476b .tdm-title {
+					font-family:Montserrat !important;font-size:30px !important;font-weight:300 !important;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_53_603cde1b3476b"><h3 class="tdm-title tdm-title-md">Intelligent Pipeline End-To-End</h3></div></div></div></div></div></div></div></div><div id="td_uid_35_603cde1b34a75" class="tdc-row stretch_row"><div class="vc_row td_uid_54_603cde1b34a7a_rand  wpb_row td-pb-row tdc-element-style" >
+<style scoped>
+
+/* custom css */
+.td_uid_54_603cde1b34a7a_rand {
+                    min-height: 0;
+                }
+                
+                
+                 .td_uid_54_603cde1b34a7a_rand > .td-element-style:after {
+                    content: '' !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                    position: absolute !important;
+                    top: 0 !important;
+                    left: 0 !important;
+                    z-index: 0 !important;
+                    display: block !important;
+                    background-color: #ffffff !important;
+                }
+</style>
+<div class="td_uid_35_603cde1b34a75_rand_style td-element-style" ></div><div class="vc_column td_uid_55_603cde1b34cac_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_55_603cde1b34cac_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_image td_uid_56_603cde1b35002_rand tdm-content-horiz-center td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_56_603cde1b35002" ><div class="tdm-inline-image-wrap"><img class="tdm-image td-fix-index" src="https://cddirector.io/wp-content/uploads/2019/10/pipeline-icon-100x100-1.png" title="pipeline-icon-100&#215;100" ></div></div><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_57_603cde1b35f83_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_57_603cde1b35f83" ><div class="td-block-title-wrap"></div><div class="td-fix-index"><h3 style="text-align: center;">End-to-End Pipeline Builder</h3>
+</div></div><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_58_603cde1b37705_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_58_603cde1b37705" >
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_58_603cde1b37705_rand{
+margin-top:-20px !important;
+}
+
+</style><div class="td-block-title-wrap"></div><div class="td-fix-index"><p style="text-align: center;">Build pipelines in minutes and track the progress of features and new releases across development, QA and production, starting with user stories and all the way to production deployment.</p>
+</div></div></div></div><div class="vc_column td_uid_59_603cde1b38e62_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_59_603cde1b38e62_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_image td_uid_60_603cde1b39061_rand tdm-content-horiz-center td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_60_603cde1b39061" ><div class="tdm-inline-image-wrap"><img class="tdm-image td-fix-index" src="https://cddirector.io/wp-content/uploads/2020/02/Release-with-Confidence.png" title="Release with Confidence" ></div></div><div class="vc_row_inner td_uid_61_603cde1b39d64_rand  vc_row vc_inner wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_61_603cde1b39d64_rand {
+                    position: relative !important;
+                    top: 0;
+                    transform: none;
+                    -webkit-transform: none;
+                }
+</style><div class="vc_column_inner td_uid_62_603cde1b39ebe_rand  wpb_column vc_column_container tdc-inner-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_62_603cde1b39ebe_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_63_603cde1b39fac_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_63_603cde1b39fac" ><div class="td-block-title-wrap"></div><div class="td-fix-index"><h3 style="text-align: center;">Release with Confidence</h3>
+</div></div><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_64_603cde1b3b156_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_64_603cde1b3b156" >
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_64_603cde1b3b156_rand{
+margin-top:-20px !important;
+}
+
+</style><div class="td-block-title-wrap"></div><div class="td-fix-index"><p style="text-align: center;">Continuous Delivery Director provides real-time information and analytics to help you identify pipeline bottlenecks, agile story statuses, backlog and inefficiencies. visualization of metrics that provide insight into the quality level of your deployments and value stream visibility end-to-end. All dramatically reduce feedback times to development so they can deliver improvements quickly without risk.</p>
+</div></div></div></div></div></div></div></div></div></div><div id="td_uid_40_603cde1b3c41a" class="tdc-row stretch_row"><div class="vc_row td_uid_65_603cde1b3c420_rand  wpb_row td-pb-row tdc-element-style" >
+<style scoped>
+
+/* custom css */
+.td_uid_65_603cde1b3c420_rand {
+                    min-height: 0;
+                }
+                
+                
+                 .td_uid_65_603cde1b3c420_rand > .td-element-style:after {
+                    content: '' !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                    position: absolute !important;
+                    top: 0 !important;
+                    left: 0 !important;
+                    z-index: 0 !important;
+                    display: block !important;
+                    background-color: #ffffff !important;
+                }
+</style>
+<div class="td_uid_40_603cde1b3c41a_rand_style td-element-style" ></div><div class="vc_column td_uid_66_603cde1b3c622_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_66_603cde1b3c622_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_image td_uid_67_603cde1b3c766_rand tdm-content-horiz-left td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_67_603cde1b3c766" >
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_67_603cde1b3c766_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+
+</style><div class="tdm-inline-image-wrap"><img class="tdm-image td-fix-index" src="https://cddirector.io/wp-content/uploads/2019/10/dependencies-icon-100x100.png" title="dependencies-icon-100&#215;100" ></div></div><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_68_603cde1b3d437_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_68_603cde1b3d437" ><div class="td-block-title-wrap"></div><div class="td-fix-index"><h3 style="text-align: center;">Continuous Pipeline Optimization</h3>
+</div></div><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_69_603cde1b3e596_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_69_603cde1b3e596" >
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_69_603cde1b3e596_rand{
+margin-top:-17px !important;
+}
+
+</style><div class="td-block-title-wrap"></div><div class="td-fix-index"><p style="text-align: center;">Continuous Delivery Director continuously monitors the progress of releases through its managed pipelines, and it analyses this data and tracks planned vs. actual metrics for all pipelines and all steps. CDD identifies bottlenecks and suggests improvements making the entire process ever-improving and ever-accelerating. KPI’s are also monitored and help optimize collaboration across teams, deployment quality and failures as well as security-related aspects of the release process.</p>
+</div></div></div></div><div class="vc_column td_uid_70_603cde1b3f6aa_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_70_603cde1b3f6aa_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_image td_uid_71_603cde1b3f779_rand tdm-content-horiz-center td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_71_603cde1b3f779" >
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_71_603cde1b3f779_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+
+</style><div class="tdm-inline-image-wrap"><img class="tdm-image td-fix-index" src="https://cddirector.io/wp-content/uploads/2019/10/hetero-environ-icon-100x100.png" title="hetero-environ-icon-100&#215;100" ></div></div><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_72_603cde1b40314_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_72_603cde1b40314" ><div class="td-block-title-wrap"></div><div class="td-fix-index"><h3 style="text-align: center;">Continuous Testing with Built-in Intelligence</h3>
+</div></div><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_73_603cde1b41427_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_73_603cde1b41427" >
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_73_603cde1b41427_rand{
+margin-top:-20px !important;
+}
+
+</style><div class="td-block-title-wrap"></div><div class="td-fix-index"><p style="text-align: center;">Continuous Delivery Director integrates with your various automated testing tools, it uses sophisticated predictive algorithms and machine learning to select the optimal test set to execute on each new code release. This revolutionary capability reduces testing cycle times, increases quality and enables fail fast at the same time.</p>
+</div></div></div></div></div></div><div id="td_uid_43_603cde1b42540" class="tdc-row"><div class="vc_row td_uid_74_603cde1b42545_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_74_603cde1b42545_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_75_603cde1b426b3_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_75_603cde1b426b3_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_image td_uid_76_603cde1b4276d_rand tdm-content-horiz-center td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_76_603cde1b4276d" >
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_76_603cde1b4276d_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+
+</style><div class="tdm-inline-image-wrap"><img class="tdm-image td-fix-index" src="https://cddirector.io/wp-content/uploads/2019/10/code-icon-100x100.png" title="code-icon-100&#215;100" ></div></div><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_77_603cde1b433c2_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_77_603cde1b433c2" ><div class="td-block-title-wrap"></div><div class="td-fix-index"><h3 style="text-align: center;">Release Dependencies Control</h3>
+</div></div><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_78_603cde1b4452f_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_78_603cde1b4452f" >
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_78_603cde1b4452f_rand{
+margin-top:-20px !important;
+}
+
+</style><div class="td-block-title-wrap"></div><div class="td-fix-index"><p style="text-align: center;">Continuous Delivery Director is designed to deal with even the most complex releases to ensure they don’t fail. It allows users to set the order of activities (such as testing and deployment) which avoids conflicts and failures, automatically detect shared environment collisions and ensure releases ran smooth and to completion.</p>
+</div></div></div></div></div></div><div id="td_uid_45_603cde1b45724" class="tdc-row stretch_row"><div class="vc_row td_uid_79_603cde1b4572a_rand  wpb_row td-pb-row tdc-element-style tdc-row-content-vert-center" >
+<style scoped>
+
+/* custom css */
+.td_uid_79_603cde1b4572a_rand {
+                    min-height: 0;
+                }
+                
+                
+                 .td_uid_79_603cde1b4572a_rand > .td-element-style:after {
+                    content: '' !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                    position: absolute !important;
+                    top: 0 !important;
+                    left: 0 !important;
+                    z-index: 0 !important;
+                    display: block !important;
+                    background-color: #eeeeee !important;
+                }
+                
+                @media (min-width: 767px) {
+                    .td_uid_79_603cde1b4572a_rand.tdc-row-content-vert-center,
+                    .td_uid_79_603cde1b4572a_rand.tdc-row-content-vert-center .tdc-columns {
+                        display: flex;
+                        align-items: center;
+                        flex: 1;
+                    }
+                    .td_uid_79_603cde1b4572a_rand.tdc-row-content-vert-bottom,
+                    .td_uid_79_603cde1b4572a_rand.tdc-row-content-vert-bottom .tdc-columns {
+                        display: flex;
+                        align-items: flex-end;
+                        flex: 1;
+                    }
+                    .td_uid_79_603cde1b4572a_rand.tdc-row-content-vert-center .td_block_wrap {
+                        vertical-align: middle;
+                    }
+                    .td_uid_79_603cde1b4572a_rand.tdc-row-content-vert-bottom .td_block_wrap {
+                        vertical-align: bottom;
+                    }
+                }
+</style>
+<div class="td_uid_45_603cde1b45724_rand_style td-element-style" ></div><div class="vc_column td_uid_80_603cde1b45909_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_80_603cde1b45909_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+.td_uid_80_603cde1b45909_rand{
+margin-top:50px !important;
+}
+
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_81_603cde1b459cb_rand tdm-content-horiz-center td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_81_603cde1b459cb" ><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body .td_uid_82_603cde1b460c9 .tdm-title {
+					color: #cc092f;
+				}
+				
+				.td_uid_82_603cde1b460c9 .tdm-title {
+					font-family:Montserrat !important;font-size:30px !important;font-weight:300 !important;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_82_603cde1b460c9"><h3 class="tdm-title tdm-title-md">Main Features</h3></div></div></div></div></div></div></div></div><div id="td_uid_47_603cde1b46398" class="tdc-row stretch_row_1200 td-stretch-content"><div class="vc_row td_uid_83_603cde1b4639c_rand  wpb_row td-pb-row tdc-element-style" >
+<style scoped>
+
+/* custom css */
+.td_uid_83_603cde1b4639c_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_83_603cde1b4639c_rand{
+position:relative;
+}
+
+.td_uid_83_603cde1b4639c_rand .td_block_wrap{ text-align:left }
+
+</style>
+<div class="td_uid_47_603cde1b46398_rand_style td-element-style" ><style>
+.td_uid_47_603cde1b46398_rand_style{
+background-color:#eeeeee !important;
+}
+ </style></div><div class="vc_column td_uid_84_603cde1b465b5_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_84_603cde1b465b5_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+.td_uid_84_603cde1b465b5_rand{
+margin-top:100px !important;
+}
+
+</style><div class="wpb_wrapper"><div class="vc_row_inner td_uid_85_603cde1b466b8_rand  vc_row vc_inner wpb_row td-pb-row tdc-row-content-vert-center" >
+<style scoped>
+
+/* custom css */
+@media (min-width: 767px) {
+                    .td_uid_85_603cde1b466b8_rand.tdc-row-content-vert-center,
+                    .td_uid_85_603cde1b466b8_rand.tdc-row-content-vert-center .tdc-inner-columns {
+                        display: flex;
+                        align-items: center;
+                        flex: 1;
+                    }
+                    .td_uid_85_603cde1b466b8_rand.tdc-row-content-vert-bottom,
+                    .td_uid_85_603cde1b466b8_rand.tdc-row-content-vert-bottom .tdc-inner-columns {
+                        display: flex;
+                        align-items: flex-end;
+                        flex: 1;
+                    }
+                    .td_uid_85_603cde1b466b8_rand.tdc-row-content-vert-center .td_block_wrap {
+                        vertical-align: middle;
+                    }
+                    .td_uid_85_603cde1b466b8_rand.tdc-row-content-vert-bottom .td_block_wrap {
+                        vertical-align: bottom;
+                    }
+                }
+                
+                
+                .td_uid_85_603cde1b466b8_rand {
+                    position: relative !important;
+                    top: 0;
+                    transform: none;
+                    -webkit-transform: none;
+                }
+</style><div class="vc_column_inner td_uid_86_603cde1b46799_rand  wpb_column vc_column_container tdc-inner-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_86_603cde1b46799_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_87_603cde1b46865_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_87_603cde1b46865" ><div class="td-block-title-wrap"></div><div class="td-fix-index"><h3>Mission Control</h3>
+<p>Manage the complete release cycle of all apps from one place.</p>
+</div></div></div></div></div></div></div></div><div class="vc_column td_uid_88_603cde1b47bea_rand  wpb_column vc_column_container tdc-column td-pb-span8">
+<style scoped>
+
+/* custom css */
+.td_uid_88_603cde1b47bea_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+.td_uid_88_603cde1b47bea_rand{
+justify-content:center !important;
+text-align:center !important;
+position:relative;
+}
+
+</style>
+<div class="td_uid_51_603cde1b47be4_rand_style td-element-style" ><div class="td-element-style-before"><style>
+.td_uid_51_603cde1b47be4_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-position:center center !important;
+background-size:cover !important;
+}
+</style></div></div><div class="wpb_wrapper"><div class="wpb_wrapper td_block_single_image td_block_wrap  td-no-img-custom-url td_block_wrap vc_single_image td_uid_89_603cde1b47d66_rand  td-single-image- td-pb-border-top td_block_template_1"><a 
+			class="td_single_image_bg" 
+			style="background-image: url('https://cddirector.io/wp-content/uploads/2020/11/CDD-General-Releasee.png'); background-size: contain; background-repeat: no-repeat; background-position: center center;" 
+			href="#"  
+			rel="bookmark"></a>
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_89_603cde1b47d66_rand{
+margin-top:50px !important;
+}
+
+</style>
+<style>
+/* custom css */
+.td_uid_89_603cde1b47d66_rand .td_single_image_bg {
+				    z-index: 1;
+				}
+				
+				.td_uid_89_603cde1b47d66_rand .td_single_image_bg {
+					height: 400px;
+					padding-bottom: 0;
+				}
+</style></div></div></div></div></div><div id="td_uid_52_603cde1b4894e" class="tdc-row"><div class="vc_row td_uid_90_603cde1b48953_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_90_603cde1b48953_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_91_603cde1b48b59_rand  wpb_column vc_column_container tdc-column td-pb-span8">
+<style scoped>
+
+/* custom css */
+.td_uid_91_603cde1b48b59_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="wpb_wrapper td_block_single_image td_block_wrap  td-no-img-custom-url td_block_wrap vc_single_image td_uid_92_603cde1b48c36_rand  td-single-image- td-pb-border-top td_block_template_1"><a 
+			class="td_single_image_bg" 
+			style="background-image: url('https://cddirector.io/wp-content/uploads/2020/11/CDD-Release-Score-Screenshot-2.png'); background-size: contain; background-repeat: no-repeat; background-position: center center;" 
+			href="#"  
+			rel="bookmark"></a>
+<style>
+/* custom css */
+.td_uid_92_603cde1b48c36_rand .td_single_image_bg {
+				    z-index: 1;
+				}
+				
+				.td_uid_92_603cde1b48c36_rand .td_single_image_bg {
+					height: 400px;
+					padding-bottom: 0;
+				}
+</style></div></div></div><div class="vc_column td_uid_93_603cde1b4964a_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_93_603cde1b4964a_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+.td_uid_93_603cde1b4964a_rand{
+margin-top:100px !important;
+}
+
+</style><div class="wpb_wrapper"><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_94_603cde1b49739_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_94_603cde1b49739" ><div class="td-block-title-wrap"></div><div class="td-fix-index"><h3>Release Scoring</h3>
+<p>Every release is dynamically scored on content and quality metrics and a release score is given so you can decide on go or no go to production or other environment with confidence and data.</p>
+</div></div></div></div></div></div><div id="td_uid_55_603cde1b4a962" class="tdc-row stretch_row_1200 td-stretch-content"><div class="vc_row td_uid_95_603cde1b4a967_rand  wpb_row td-pb-row tdc-element-style" >
+<style scoped>
+
+/* custom css */
+.td_uid_95_603cde1b4a967_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_95_603cde1b4a967_rand{
+position:relative;
+}
+
+.td_uid_95_603cde1b4a967_rand .td_block_wrap{ text-align:left }
+
+</style>
+<div class="td_uid_55_603cde1b4a962_rand_style td-element-style" ><style>
+.td_uid_55_603cde1b4a962_rand_style{
+background-color:#eeeeee !important;
+}
+ </style></div><div class="vc_column td_uid_96_603cde1b4ab69_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_96_603cde1b4ab69_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+.td_uid_96_603cde1b4ab69_rand{
+margin-top:100px !important;
+}
+
+</style><div class="wpb_wrapper"><div class="vc_row_inner td_uid_97_603cde1b4ac58_rand  vc_row vc_inner wpb_row td-pb-row tdc-row-content-vert-center" >
+<style scoped>
+
+/* custom css */
+@media (min-width: 767px) {
+                    .td_uid_97_603cde1b4ac58_rand.tdc-row-content-vert-center,
+                    .td_uid_97_603cde1b4ac58_rand.tdc-row-content-vert-center .tdc-inner-columns {
+                        display: flex;
+                        align-items: center;
+                        flex: 1;
+                    }
+                    .td_uid_97_603cde1b4ac58_rand.tdc-row-content-vert-bottom,
+                    .td_uid_97_603cde1b4ac58_rand.tdc-row-content-vert-bottom .tdc-inner-columns {
+                        display: flex;
+                        align-items: flex-end;
+                        flex: 1;
+                    }
+                    .td_uid_97_603cde1b4ac58_rand.tdc-row-content-vert-center .td_block_wrap {
+                        vertical-align: middle;
+                    }
+                    .td_uid_97_603cde1b4ac58_rand.tdc-row-content-vert-bottom .td_block_wrap {
+                        vertical-align: bottom;
+                    }
+                }
+                
+                
+                .td_uid_97_603cde1b4ac58_rand {
+                    position: relative !important;
+                    top: 0;
+                    transform: none;
+                    -webkit-transform: none;
+                }
+</style><div class="vc_column_inner td_uid_98_603cde1b4ad95_rand  wpb_column vc_column_container tdc-inner-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_98_603cde1b4ad95_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></div></div><div class="vc_column td_uid_99_603cde1b4ae0c_rand  wpb_column vc_column_container tdc-column td-pb-span8">
+<style scoped>
+
+/* custom css */
+.td_uid_99_603cde1b4ae0c_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+.td_uid_99_603cde1b4ae0c_rand{
+justify-content:center !important;
+text-align:center !important;
+position:relative;
+}
+
+</style>
+<div class="td_uid_59_603cde1b4ae09_rand_style td-element-style" ><div class="td-element-style-before"><style>
+.td_uid_59_603cde1b4ae09_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-position:center center !important;
+background-size:cover !important;
+}
+</style></div></div><div class="wpb_wrapper"></div></div></div></div><div id="td_uid_60_603cde1b4ae78" class="tdc-row"><div class="vc_row td_uid_100_603cde1b4ae7b_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_100_603cde1b4ae7b_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_101_603cde1b4afc3_rand  wpb_column vc_column_container tdc-column td-pb-span8">
+<style scoped>
+
+/* custom css */
+.td_uid_101_603cde1b4afc3_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="wpb_wrapper td_block_single_image td_block_wrap  td-no-img-custom-url td_block_wrap vc_single_image td_uid_102_603cde1b4b062_rand  td-single-image- td-pb-border-top td_block_template_1"><a 
+			class="td_single_image_bg" 
+			style="background-image: url('https://cddirector.io/wp-content/uploads/2020/11/work_items_report.png'); background-size: contain; background-repeat: no-repeat; background-position: center center;" 
+			href="#"  
+			rel="bookmark"></a>
+<style>
+/* custom css */
+.td_uid_102_603cde1b4b062_rand .td_single_image_bg {
+				    z-index: 1;
+				}
+				
+				.td_uid_102_603cde1b4b062_rand .td_single_image_bg {
+					height: 500px;
+					padding-bottom: 0;
+				}
+</style></div></div></div><div class="vc_column td_uid_103_603cde1b4ba87_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_103_603cde1b4ba87_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+.td_uid_103_603cde1b4ba87_rand{
+margin-top:100px !important;
+}
+
+</style><div class="wpb_wrapper"><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_104_603cde1b4bb74_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_104_603cde1b4bb74" ><div class="td-block-title-wrap"></div><div class="td-fix-index"><h3>Business Content</h3>
+<p>Get a clear insight into business priorities and understand where they are in the pipeline.</p>
+</div></div></div></div></div></div><div id="td_uid_63_603cde1b4cd2b" class="tdc-row stretch_row_1200 td-stretch-content"><div class="vc_row td_uid_105_603cde1b4cd2f_rand  wpb_row td-pb-row tdc-element-style" >
+<style scoped>
+
+/* custom css */
+.td_uid_105_603cde1b4cd2f_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_105_603cde1b4cd2f_rand{
+position:relative;
+}
+
+.td_uid_105_603cde1b4cd2f_rand .td_block_wrap{ text-align:left }
+
+</style>
+<div class="td_uid_63_603cde1b4cd2b_rand_style td-element-style" ><style>
+.td_uid_63_603cde1b4cd2b_rand_style{
+background-color:#eeeeee !important;
+}
+ </style></div><div class="vc_column td_uid_106_603cde1b4cea0_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_106_603cde1b4cea0_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+.td_uid_106_603cde1b4cea0_rand{
+margin-top:100px !important;
+}
+
+</style><div class="wpb_wrapper"><div class="vc_row_inner td_uid_107_603cde1b4cf34_rand  vc_row vc_inner wpb_row td-pb-row tdc-row-content-vert-center" >
+<style scoped>
+
+/* custom css */
+@media (min-width: 767px) {
+                    .td_uid_107_603cde1b4cf34_rand.tdc-row-content-vert-center,
+                    .td_uid_107_603cde1b4cf34_rand.tdc-row-content-vert-center .tdc-inner-columns {
+                        display: flex;
+                        align-items: center;
+                        flex: 1;
+                    }
+                    .td_uid_107_603cde1b4cf34_rand.tdc-row-content-vert-bottom,
+                    .td_uid_107_603cde1b4cf34_rand.tdc-row-content-vert-bottom .tdc-inner-columns {
+                        display: flex;
+                        align-items: flex-end;
+                        flex: 1;
+                    }
+                    .td_uid_107_603cde1b4cf34_rand.tdc-row-content-vert-center .td_block_wrap {
+                        vertical-align: middle;
+                    }
+                    .td_uid_107_603cde1b4cf34_rand.tdc-row-content-vert-bottom .td_block_wrap {
+                        vertical-align: bottom;
+                    }
+                }
+                
+                
+                .td_uid_107_603cde1b4cf34_rand {
+                    position: relative !important;
+                    top: 0;
+                    transform: none;
+                    -webkit-transform: none;
+                }
+</style><div class="vc_column_inner td_uid_108_603cde1b4d010_rand  wpb_column vc_column_container tdc-inner-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_108_603cde1b4d010_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_109_603cde1b4d0d5_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_109_603cde1b4d0d5" ><div class="td-block-title-wrap"></div><div class="td-fix-index"><h3>Optimize Test Cycles</h3>
+<p>Use ML to determine which tests are important.</p>
+</div></div></div></div></div></div></div></div><div class="vc_column td_uid_110_603cde1b4e381_rand  wpb_column vc_column_container tdc-column td-pb-span8">
+<style scoped>
+
+/* custom css */
+.td_uid_110_603cde1b4e381_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+.td_uid_110_603cde1b4e381_rand{
+justify-content:center !important;
+text-align:center !important;
+position:relative;
+}
+
+</style>
+<div class="td_uid_67_603cde1b4e37c_rand_style td-element-style" ><div class="td-element-style-before"><style>
+.td_uid_67_603cde1b4e37c_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-position:center center !important;
+background-size:cover !important;
+}
+</style></div></div><div class="wpb_wrapper"><div class="wpb_wrapper td_block_single_image td_block_wrap  td-no-img-custom-url td_block_wrap vc_single_image td_uid_111_603cde1b4e462_rand  td-single-image- td-pb-border-top td_block_template_1"><a 
+			class="td_single_image_bg" 
+			style="background-image: url('https://cddirector.io/wp-content/uploads/2020/11/CDD-Test-Advisor-Summary.png'); background-size: contain; background-repeat: no-repeat; background-position: center center;" 
+			href="#"  
+			rel="bookmark"></a>
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_111_603cde1b4e462_rand{
+margin-top:50px !important;
+}
+
+</style>
+<style>
+/* custom css */
+.td_uid_111_603cde1b4e462_rand .td_single_image_bg {
+				    z-index: 1;
+				}
+				
+				.td_uid_111_603cde1b4e462_rand .td_single_image_bg {
+					height: 400px;
+					padding-bottom: 0;
+				}
+</style></div></div></div></div></div><div id="td_uid_68_603cde1b4eeb0" class="tdc-row"><div class="vc_row td_uid_112_603cde1b4eeb4_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_112_603cde1b4eeb4_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_113_603cde1b4f02d_rand  wpb_column vc_column_container tdc-column td-pb-span8">
+<style scoped>
+
+/* custom css */
+.td_uid_113_603cde1b4f02d_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="wpb_wrapper td_block_single_image td_block_wrap  td-no-img-custom-url td_block_wrap vc_single_image td_uid_114_603cde1b4f0cc_rand  td-single-image- td-pb-border-top td_block_template_1"><a 
+			class="td_single_image_bg" 
+			style="background-image: url('https://cddirector.io/wp-content/uploads/2020/11/CDD-Release-Quality-Report.png'); background-size: contain; background-repeat: no-repeat; background-position: center center;" 
+			href="#"  
+			rel="bookmark"></a>
+<style>
+/* custom css */
+.td_uid_114_603cde1b4f0cc_rand .td_single_image_bg {
+				    z-index: 1;
+				}
+				
+				.td_uid_114_603cde1b4f0cc_rand .td_single_image_bg {
+					height: 500px;
+					padding-bottom: 0;
+				}
+</style></div></div></div><div class="vc_column td_uid_115_603cde1b4fa11_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_115_603cde1b4fa11_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+.td_uid_115_603cde1b4fa11_rand{
+margin-top:100px !important;
+}
+
+</style><div class="wpb_wrapper"><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_116_603cde1b4fb2d_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_116_603cde1b4fb2d" ><div class="td-block-title-wrap"></div><div class="td-fix-index"><h3>Actionable Analytics</h3>
+<p>Continuously improve processes, apps and teams</p>
+</div></div></div></div></div></div><div id="td_uid_71_603cde1b50d22" class="tdc-row stretch_row_1200 td-stretch-content"><div class="vc_row td_uid_117_603cde1b50d26_rand  wpb_row td-pb-row tdc-element-style" >
+<style scoped>
+
+/* custom css */
+.td_uid_117_603cde1b50d26_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_117_603cde1b50d26_rand{
+position:relative;
+}
+
+.td_uid_117_603cde1b50d26_rand .td_block_wrap{ text-align:left }
+
+</style>
+<div class="td_uid_71_603cde1b50d22_rand_style td-element-style" ><style>
+.td_uid_71_603cde1b50d22_rand_style{
+background-color:#eeeeee !important;
+}
+ </style></div><div class="vc_column td_uid_118_603cde1b50ea9_rand  wpb_column vc_column_container tdc-column td-pb-span4">
+<style scoped>
+
+/* custom css */
+.td_uid_118_603cde1b50ea9_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+.td_uid_118_603cde1b50ea9_rand{
+margin-top:100px !important;
+}
+
+</style><div class="wpb_wrapper"><div class="vc_row_inner td_uid_119_603cde1b50f41_rand  vc_row vc_inner wpb_row td-pb-row tdc-row-content-vert-center" >
+<style scoped>
+
+/* custom css */
+@media (min-width: 767px) {
+                    .td_uid_119_603cde1b50f41_rand.tdc-row-content-vert-center,
+                    .td_uid_119_603cde1b50f41_rand.tdc-row-content-vert-center .tdc-inner-columns {
+                        display: flex;
+                        align-items: center;
+                        flex: 1;
+                    }
+                    .td_uid_119_603cde1b50f41_rand.tdc-row-content-vert-bottom,
+                    .td_uid_119_603cde1b50f41_rand.tdc-row-content-vert-bottom .tdc-inner-columns {
+                        display: flex;
+                        align-items: flex-end;
+                        flex: 1;
+                    }
+                    .td_uid_119_603cde1b50f41_rand.tdc-row-content-vert-center .td_block_wrap {
+                        vertical-align: middle;
+                    }
+                    .td_uid_119_603cde1b50f41_rand.tdc-row-content-vert-bottom .td_block_wrap {
+                        vertical-align: bottom;
+                    }
+                }
+                
+                
+                .td_uid_119_603cde1b50f41_rand {
+                    position: relative !important;
+                    top: 0;
+                    transform: none;
+                    -webkit-transform: none;
+                }
+</style><div class="vc_column_inner td_uid_120_603cde1b5101a_rand  wpb_column vc_column_container tdc-inner-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_120_603cde1b5101a_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_wrapper wpb_text_column td_block_wrap td_block_wrap vc_column_text td_uid_121_603cde1b510dd_rand  tagdiv-type td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_121_603cde1b510dd" ><div class="td-block-title-wrap"></div><div class="td-fix-index"><h3>Manage the Complexity</h3>
+<p>Manage complex, multi-component releases and understand if there are any conflicts that can bring risk to the release.</p>
+</div></div></div></div></div></div></div></div><div class="vc_column td_uid_122_603cde1b52285_rand  wpb_column vc_column_container tdc-column td-pb-span8">
+<style scoped>
+
+/* custom css */
+.td_uid_122_603cde1b52285_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+.td_uid_122_603cde1b52285_rand{
+justify-content:center !important;
+text-align:center !important;
+position:relative;
+}
+
+</style>
+<div class="td_uid_75_603cde1b52281_rand_style td-element-style" ><div class="td-element-style-before"><style>
+.td_uid_75_603cde1b52281_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-position:center center !important;
+background-size:cover !important;
+}
+</style></div></div><div class="wpb_wrapper"><div class="wpb_wrapper td_block_single_image td_block_wrap  td-no-img-custom-url td_block_wrap vc_single_image td_uid_123_603cde1b52355_rand  td-single-image- td-pb-border-top td_block_template_1"><a 
+			class="td_single_image_bg" 
+			style="background-image: url('https://cddirector.io/wp-content/uploads/2020/11/environment_conflict.png'); background-size: contain; background-repeat: no-repeat; background-position: center center;" 
+			href="#"  
+			rel="bookmark"></a>
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_123_603cde1b52355_rand{
+margin-top:50px !important;
+}
+
+</style>
+<style>
+/* custom css */
+.td_uid_123_603cde1b52355_rand .td_single_image_bg {
+				    z-index: 1;
+				}
+				
+				.td_uid_123_603cde1b52355_rand .td_single_image_bg {
+					height: 400px;
+					padding-bottom: 0;
+				}
+</style></div></div></div></div></div><div id="td_uid_76_603cde1b52cdc" class="tdc-row"><div class="vc_row td_uid_124_603cde1b52ce0_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_124_603cde1b52ce0_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_125_603cde1b52e4d_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_125_603cde1b52e4d_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"></div></div></div></div><div id="td_uid_78_603cde1b52ea4" class="tdc-row"><div class="vc_row td_uid_126_603cde1b52ea6_rand  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.td_uid_126_603cde1b52ea6_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_127_603cde1b52fca_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_127_603cde1b52fca_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"></div></div></div></div></div></div>                </div>
+                            </div> <!-- /.td-main-content-wrap -->
+
+
+            <!-- Instagram -->
+
+
+
+
+	<!-- Footer -->
+	<div class="td-footer-wrapper td-footer-container td-container-wrap td-footer-template-2 ">
+    <div class="td-container">
+
+	    <div class="td-pb-row">
+		    <div class="td-pb-span12">
+			    		    </div>
+	    </div>
+
+        <div class="td-pb-row">
+
+            <div class="td-pb-span4">
+                <div class="td-footer-info"><div class="footer-logo-wrap"><a href="https://cddirector.io/"><img src="https://cddirector.io/wp-content/uploads/2019/10/CA-Broadcom_Horizontal_red-white.png" alt="" title=""/></a></div><div class="footer-text-wrap">Intelligent Pipeline For Your DevOps Initiatives</div><div class="footer-social-wrap td-social-style-2">
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://www.linkedin.com/company/broadcom/" title="Linkedin">
+                <i class="td-icon-font td-icon-linkedin"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="mailto:ralf.paschen@broadcom.com" title="Mail">
+                <i class="td-icon-font td-icon-mail-1"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://twitter.com/broadcom" title="Twitter">
+                <i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span></div></div>                            </div>
+
+            <div class="td-pb-span4">
+                <div class="td_block_wrap td_block_7 td_uid_129_603cde1b53f9c_rand td-pb-border-top td_block_template_1 td-column-1 td_block_padding"  data-td-block-uid="td_uid_129_603cde1b53f9c" ><script>var block_td_uid_129_603cde1b53f9c = new tdBlock();
+block_td_uid_129_603cde1b53f9c.id = "td_uid_129_603cde1b53f9c";
+block_td_uid_129_603cde1b53f9c.atts = '{"custom_title":"POPULAR POSTS","limit":3,"sort":"popular","separator":"","custom_url":"","block_template_id":"","m6_tl":"","post_ids":"","category_id":"","category_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","offset":"","show_modified_date":"","el_class":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","td_ajax_preloading":"","f_header_font_header":"","f_header_font_title":"Block header","f_header_font_settings":"","f_header_font_family":"","f_header_font_size":"","f_header_font_line_height":"","f_header_font_style":"","f_header_font_weight":"","f_header_font_transform":"","f_header_font_spacing":"","f_header_":"","f_ajax_font_title":"Ajax categories","f_ajax_font_settings":"","f_ajax_font_family":"","f_ajax_font_size":"","f_ajax_font_line_height":"","f_ajax_font_style":"","f_ajax_font_weight":"","f_ajax_font_transform":"","f_ajax_font_spacing":"","f_ajax_":"","f_more_font_title":"Load more button","f_more_font_settings":"","f_more_font_family":"","f_more_font_size":"","f_more_font_line_height":"","f_more_font_style":"","f_more_font_weight":"","f_more_font_transform":"","f_more_font_spacing":"","f_more_":"","m6f_title_font_header":"","m6f_title_font_title":"Article title","m6f_title_font_settings":"","m6f_title_font_family":"","m6f_title_font_size":"","m6f_title_font_line_height":"","m6f_title_font_style":"","m6f_title_font_weight":"","m6f_title_font_transform":"","m6f_title_font_spacing":"","m6f_title_":"","m6f_cat_font_title":"Article category tag","m6f_cat_font_settings":"","m6f_cat_font_family":"","m6f_cat_font_size":"","m6f_cat_font_line_height":"","m6f_cat_font_style":"","m6f_cat_font_weight":"","m6f_cat_font_transform":"","m6f_cat_font_spacing":"","m6f_cat_":"","m6f_meta_font_title":"Article meta info","m6f_meta_font_settings":"","m6f_meta_font_family":"","m6f_meta_font_size":"","m6f_meta_font_line_height":"","m6f_meta_font_style":"","m6f_meta_font_weight":"","m6f_meta_font_transform":"","m6f_meta_font_spacing":"","m6f_meta_":"","ajax_pagination":"","ajax_pagination_infinite_stop":"","css":"","tdc_css":"","td_column_number":1,"header_color":"","color_preset":"","border_top":"","class":"td_uid_129_603cde1b53f9c_rand","tdc_css_class":"td_uid_129_603cde1b53f9c_rand","tdc_css_class_style":"td_uid_129_603cde1b53f9c_rand_style"}';
+block_td_uid_129_603cde1b53f9c.td_column_number = "1";
+block_td_uid_129_603cde1b53f9c.block_type = "td_block_7";
+block_td_uid_129_603cde1b53f9c.post_count = "3";
+block_td_uid_129_603cde1b53f9c.found_posts = "14";
+block_td_uid_129_603cde1b53f9c.header_color = "";
+block_td_uid_129_603cde1b53f9c.ajax_pagination_infinite_stop = "";
+block_td_uid_129_603cde1b53f9c.max_num_pages = "5";
+tdBlocksArray.push(block_td_uid_129_603cde1b53f9c);
+</script><div class="td-block-title-wrap"><h4 class="block-title td-block-title"><span class="td-pulldown-size">POPULAR POSTS</span></h4></div><div id=td_uid_129_603cde1b53f9c class="td_block_inner">
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack">
+
+        <div class="td-module-thumb"><a href="https://cddirector.io/2019/10/08/new-release-of-automic-continuous-delivery-director-available/" rel="bookmark" class="td-image-wrap" title="New release of Automic Continuous Delivery Director available"><img width="100" height="70" class="entry-thumb" src="https://cddirector.io/wp-content/uploads/2019/10/new-cd-director_1068x713-2-100x70.jpg"  srcset="https://cddirector.io/wp-content/uploads/2019/10/new-cd-director_1068x713-2-100x70.jpg 100w, https://cddirector.io/wp-content/uploads/2019/10/new-cd-director_1068x713-2-218x150.jpg 218w" sizes="(max-width: 100px) 100vw, 100px"  alt="" title="New release of Automic Continuous Delivery Director available" /></a></div>
+        <div class="item-details">
+            <h3 class="entry-title td-module-title"><a href="https://cddirector.io/2019/10/08/new-release-of-automic-continuous-delivery-director-available/" rel="bookmark" title="New release of Automic Continuous Delivery Director available">New release of Automic Continuous Delivery Director available</a></h3>            <div class="td-module-meta-info">
+                                                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2019-10-08T17:09:41+00:00" >October 8, 2019</time></span>                            </div>
+        </div>
+
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack">
+
+        <div class="td-module-thumb"><a href="https://cddirector.io/2019/10/08/why-we-dont-compete-with-spinnaker/" rel="bookmark" class="td-image-wrap" title="Why we don’t compete with Spinnaker"><img width="100" height="70" class="entry-thumb" src="https://cddirector.io/wp-content/uploads/2019/10/spinaker_1068x713-100x70.jpg"  srcset="https://cddirector.io/wp-content/uploads/2019/10/spinaker_1068x713-100x70.jpg 100w, https://cddirector.io/wp-content/uploads/2019/10/spinaker_1068x713-218x150.jpg 218w" sizes="(max-width: 100px) 100vw, 100px"  alt="" title="Why we don’t compete with Spinnaker" /></a></div>
+        <div class="item-details">
+            <h3 class="entry-title td-module-title"><a href="https://cddirector.io/2019/10/08/why-we-dont-compete-with-spinnaker/" rel="bookmark" title="Why we don’t compete with Spinnaker">Why we don’t compete with Spinnaker</a></h3>            <div class="td-module-meta-info">
+                                                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2019-10-08T16:58:55+00:00" >October 8, 2019</time></span>                            </div>
+        </div>
+
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack">
+
+        <div class="td-module-thumb"><a href="https://cddirector.io/2019/10/08/standing-up-for-continuous-delivery/" rel="bookmark" class="td-image-wrap" title="Standing up for Continuous-Delivery"><img width="100" height="70" class="entry-thumb" src="https://cddirector.io/wp-content/uploads/2019/10/standing-up-to-cd_1068x713-100x70.jpg"  srcset="https://cddirector.io/wp-content/uploads/2019/10/standing-up-to-cd_1068x713-100x70.jpg 100w, https://cddirector.io/wp-content/uploads/2019/10/standing-up-to-cd_1068x713-218x150.jpg 218w" sizes="(max-width: 100px) 100vw, 100px"  alt="" title="Standing up for Continuous-Delivery" /></a></div>
+        <div class="item-details">
+            <h3 class="entry-title td-module-title"><a href="https://cddirector.io/2019/10/08/standing-up-for-continuous-delivery/" rel="bookmark" title="Standing up for Continuous-Delivery">Standing up for Continuous-Delivery</a></h3>            <div class="td-module-meta-info">
+                                                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2019-10-08T16:51:08+00:00" >October 8, 2019</time></span>                            </div>
+        </div>
+
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 --></div></div> <!-- ./block -->                            </div>
+
+            <div class="td-pb-span4">
+                <div class="td_block_wrap td_block_popular_categories td_uid_130_603cde1b57368_rand widget widget_categories td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_130_603cde1b57368" ><div class="td-block-title-wrap"><h4 class="block-title td-block-title"><span class="td-pulldown-size">POPULAR CATEGORY</span></h4></div><ul class="td-pb-padding-side"><li><a href="https://cddirector.io/category/blog/"><span class="td-cat-name">Blog</span><span class="td-cat-no">7</span></a></li><li><a href="https://cddirector.io/category/quick-setup/"><span class="td-cat-name">Quick Setup</span><span class="td-cat-no">7</span></a></li><li><a href="https://cddirector.io/category/customers/"><span class="td-cat-name">Customers</span><span class="td-cat-no">0</span></a></li></ul></div> <!-- ./block -->                            </div>
+        </div>
+    </div>
+</div>
+
+	<!-- Sub Footer -->
+	    <div class="td-sub-footer-container td-container-wrap ">
+        <div class="td-container">
+            <div class="td-pb-row">
+                <div class="td-pb-span td-sub-footer-menu">
+                    <div class="menu-footer-navigation-container"><ul id="menu-footer-navigation" class="td-subfooter-menu"><li id="menu-item-112" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-first td-menu-item td-normal-menu menu-item-112"><a target="_blank" rel="noopener noreferrer" href="https://www.broadcom.com/info/enterprise/starter-edition-software/terms-and-conditions">Terms of service</a></li>
+<li id="menu-item-113" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-113"><a target="_blank" rel="noopener noreferrer" href="https://www.broadcom.com/company/legal/privacy-policy">Privacy</a></li>
+</ul></div>                </div>
+
+                <div class="td-pb-span td-sub-footer-copy">
+                    &copy; Copyright © 2005-2019 Broadcom. All Rights Reserved. The term “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div><!--close td-outer-wrap-->
+
+
+
+
+    <!--
+
+        Theme: Newspaper by tagDiv.com 2019
+        Version: 9.8 (rara)
+        Deploy mode: deploy
+        
+        uid: 603cde1b58d0c
+    -->
+
+    				<script>
+				;(function ($, window, document, undefined ) {
+					$(document).ready(function() {
+						setTimeout(function() {
+							
+						var settings = {"id":33,"editor":{"selected_shape":"rect-7501","tool":"drag","shapeCounter":{"rects":8}},"general":{"name":"CDPipeline","shortcode":"CDPipeline","width":996,"height":393,"naturalWidth":996,"naturalHeight":393},"image":{"url":"https:\/\/cddirector.io\/wp-content\/uploads\/2020\/03\/CD-pipeline-security.png"},"custom_code":{"custom_js":"(function($, window, document, undefined) {    $(document).ready(function() {        \/\/ Called when the user triggers a mouseover event        $.imageMapProEventHighlightedShape = function(imageMapName, shapeName) {            \/\/ First, check which shape triggered the event            if (shapeName == 'Circle 1') {                \/\/ Change the background image of the image map                $('.imp-main-image').attr('src', 'path\/to\/image_for_circle_1.png');            }            \/\/ Repeat for each shape            \/\/ \u2026        }        \/\/ Called when the user removes the mouse from a shape        $.imageMapProEventUnhighlightedShape = function(imageMapName, shapeName) {            \/\/ Go back to the default image            $('.imp-main-image').attr('src', 'path\/to\/default_image.png');        }    });})(jQuery, window, document);"},"spots":[{"id":"rect-7501","title":"Intelligent Pipeline - Hover Box","type":"rect","x":8,"y":50.254,"width":12.551,"height":34.86,"x_image_background":4.317,"y_image_background":50.254,"width_image_background":12.551,"height_image_background":34.86,"default_style":{"border_radius":10,"background_color":"","background_opacity":0},"mouseover_style":{"border_radius":10},"tooltip_style":{"width":323,"auto_width":0,"offset_x":0.7027349397590328,"offset_y":3.562753180661577},"tooltip_content":{"squares_settings":{"containers":[{"id":"sq-container-743651","settings":{"elements":[{"settings":{"name":"Heading","iconClass":"fa fa-header"},"options":{"heading":{"text":"Automic Continuous Delivery Director","heading":"h1"},"style":{"background_opacity":0.36153846153846153},"font":{"font_size":"16"}}},{"settings":{"name":"Heading","iconClass":"fa fa-header"},"options":{"heading":{"text":"Automic Continuous Delivery Director is the industry\u2019s most intelligent cloud-ready Continuous Delivery solution designed for driving agility at scale."},"font":{"line_height":""}}},{"settings":{"name":"Button","iconClass":"fa fa-link"},"options":{"button":{"text":"Free Starter Edition","link_to":"https:\/\/cddirector.io\/cdd\/sign-in.jsp?task=signup","new_tab":1,"display":"block","bg_color":"#cc092f","border_radius":5}}},{"settings":{"name":"Button","iconClass":"fa fa-link"},"options":{"button":{"text":"Explore","link_to":"https:\/\/www.broadcom.com\/products\/software\/automation\/continuous-delivery\/automic-continuous-delivery-director","new_tab":1,"display":"block","bg_color":"#cc092f","border_radius":5}}}]}}]}}},{"id":"rect-2719","title":"PLAN - Hover Box","type":"rect","x":21,"y":42.621,"width":9.94,"height":49.364,"x_image_background":17.671,"y_image_background":42.621,"width_image_background":9.94,"height_image_background":49.364,"default_style":{"border_radius":10,"background_color":"","background_opacity":0.006810897435897436},"mouseover_style":{"border_radius":10},"tooltip_style":{"width":323,"auto_width":0,"offset_x":-0.8037650602409627,"offset_y":2.548276081424934},"tooltip_content":{"squares_settings":{"containers":[{"id":"sq-container-226431","settings":{"elements":[{"settings":{"name":"Heading","iconClass":"fa fa-header"},"options":{"heading":{"text":"Rally"},"style":{"background_color":"#eeeeee","background_opacity":0.3769230769230769},"font":{"font_size":"16"}}},{"settings":{"name":"Paragraph","iconClass":"fa fa-paragraph"},"options":{"text":{"text":"From agile planning and delivery to business transformation."}}},{"settings":{"name":"Button","iconClass":"fa fa-link"},"options":{"button":{"text":"Free Starter Edition","link_to":"https:\/\/learn.broadcom.com\/rally-starter-edition","new_tab":1,"display":"block","bg_color":"#cc092f"}}},{"settings":{"name":"Button","iconClass":"fa fa-link"},"options":{"button":{"text":"Explore","link_to":"https:\/\/www.broadcom.com\/info\/agile\/agile-planning","new_tab":1,"display":"block","bg_color":"#cc092f"}}}]}}]}}},{"id":"rect-5776","title":"DEV - Hover Box","type":"rect","x":33,"y":43.385,"width":9.839,"height":48.6,"x_image_background":29.116,"y_image_background":43.385,"width_image_background":9.839,"height_image_background":48.6,"default_style":{"border_radius":10,"background_color":"","background_opacity":0},"mouseover_style":{"border_radius":10},"tooltip_style":{"width":323,"auto_width":0,"offset_x":-0.8037650602409627,"offset_y":2.548276081424934},"tooltip_content":{"squares_settings":{"containers":[{"id":"sq-container-747511","settings":{"elements":[{"settings":{"name":"Heading","iconClass":"fa fa-header"},"options":{"heading":{"text":"CA Brightside","heading":"h1"},"style":{"background_color":"#eeeeee","background_opacity":0.35384615384615387},"font":{"font_size":"16"}}},{"settings":{"name":"Paragraph","iconClass":"fa fa-paragraph"},"options":{"text":{"text":"Enterprise support for Zowe from a trusted mainframe partner."}}},{"settings":{"name":"Button","iconClass":"fa fa-link"},"options":{"button":{"text":"Explore","link_to":"https:\/\/www.broadcom.com\/products\/mainframe\/devops-app-development\/open-mainframe\/open-source-mainframe-brightside","new_tab":1,"display":"block","bg_color":"#cc092f","border_radius":5}}}]}}]}}},{"id":"rect-5366","title":"TEST - Hover Box","type":"rect","x":45,"y":44.148,"width":9.538,"height":48.473,"x_image_background":41.767,"y_image_background":44.148,"width_image_background":9.538,"height_image_background":48.473,"default_style":{"border_radius":10,"background_color":"","background_opacity":0},"mouseover_style":{"border_radius":10},"tooltip_style":{"width":311,"auto_width":0},"tooltip_content":{"squares_settings":{"containers":[{"id":"sq-container-812351","settings":{"elements":[{"settings":{"name":"Heading","iconClass":"fa fa-header"},"options":{"heading":{"text":"BlazeMeter"},"style":{"background_color":"#eeeeee","background_opacity":0.3730769230769231},"font":{"font_size":"16"}}},{"settings":{"name":"Paragraph","iconClass":"fa fa-paragraph"},"options":{"text":{"text":"Complete Continuous Testing for the Enterprise One Platform. 100% Open Source Compatible."}}},{"settings":{"name":"Button","iconClass":"fa fa-link"},"options":{"button":{"text":"Free Starter Edition","link_to":"https:\/\/auth.blazemeter.com\/auth\/realms\/blazect\/protocol\/openid-connect\/registrations?client_id=account&response_type=code&redirect_uri=https%3A%2F%2Fauth.blazemeter.com%2Fauth%2Frealms%2Fblazect%2Fprotocol","new_tab":1,"display":"block","bg_color":"#cc092f","border_radius":5}}},{"settings":{"name":"Button","iconClass":"fa fa-link"},"options":{"button":{"text":"Explore","link_to":"https:\/\/www.blazemeter.com\/product\/","new_tab":1,"display":"block","bg_color":"#cc092f","border_radius":5}}}]}}]}}},{"id":"rect-8801","title":"DEPLOY - Hover Box","type":"rect","x":56,"y":43.638,"width":10.542,"height":49.746,"x_image_background":53.614,"y_image_background":43.638,"width_image_background":10.542,"height_image_background":49.746,"default_style":{"border_radius":10,"background_color":"","background_opacity":0.015357905982905982},"mouseover_style":{"border_radius":10},"tooltip_style":{"width":323,"auto_width":0,"offset_x":-0.8037650602409627,"offset_y":2.548276081424934},"tooltip_content":{"squares_settings":{"containers":[{"id":"sq-container-760371","settings":{"elements":[{"settings":{"name":"Heading","iconClass":"fa fa-header"},"options":{"heading":{"text":"Automic Continuous Delivery Automation"},"style":{"background_color":"#eeeeee","background_opacity":0.3923076923076923},"font":{"font_size":"16"}}},{"settings":{"name":"Paragraph","iconClass":"fa fa-paragraph"},"options":{"text":{"text":"Drive agility and speed to digital business apps and core commercial applications."}}},{"settings":{"name":"Button","iconClass":"fa fa-link"},"options":{"button":{"text":"Explore","link_to":"https:\/\/www.broadcom.com\/products\/software\/automation\/continuous-delivery\/automic-continuous-delivery-automation","bg_color":"#cc092f","border_radius":5}}},{"settings":{"name":"Paragraph","iconClass":"fa fa-paragraph"},"options":{"text":{"text":""}}},{"settings":{"name":"Heading","iconClass":"fa fa-header"},"options":{"heading":{"text":"Nolio Release Automation"},"style":{"background_color":"#eeeeee","background_opacity":0.38076923076923075},"font":{"font_size":"16"}}},{"settings":{"name":"Paragraph","iconClass":"fa fa-paragraph"},"options":{"text":{"text":"Reach zero-touch application deployment anytime, anywhere."}}},{"settings":{"name":"Button","iconClass":"fa fa-link"},"options":{"button":{"text":"Explore","link_to":"https:\/\/www.broadcom.com\/products\/software\/automation\/continuous-delivery\/nolio-release-automation","new_tab":1,"bg_color":"#cc092f","border_radius":5}}}]}},{"id":"sq-container-568731"}]}}},{"id":"rect-4673","title":"OPERATE - Hover Box","type":"rect","x":69,"y":43.639,"width":9.438,"height":49.491,"x_image_background":67.771,"y_image_background":43.639,"width_image_background":9.438,"height_image_background":49.491,"default_style":{"border_radius":10,"background_color":"","background_opacity":0.03245192307692308},"mouseover_style":{"border_radius":10},"tooltip_style":{"width":324,"auto_width":0},"tooltip_content":{"squares_settings":{"containers":[{"id":"sq-container-749981","settings":{"elements":[{"settings":{"name":"Heading","iconClass":"fa fa-header"},"options":{"heading":{"text":"AIOps"},"style":{"background_color":"#eeeeee","background_opacity":0.3730769230769231},"font":{"font_size":"16"}}},{"settings":{"name":"Paragraph","iconClass":"fa fa-paragraph"},"options":{"text":{"text":"Deliver flawless AI-driven digital experiences."}}},{"settings":{"name":"Button","iconClass":"fa fa-link"},"options":{"button":{"text":"Explore","link_to":"https:\/\/www.broadcom.com\/products\/software\/aiops","new_tab":1,"bg_color":"#cc092f","border_radius":5}}}]}}]}}}]};
+$('#image-map-pro-33').imageMapPro(settings);
+						}, 0);
+					});
+				})(jQuery, window, document);
+				</script>
+				<script>(function($, window, document, undefined) { $(document).ready(function() { // Called when the user triggers a mouseover event $.imageMapProEventHighlightedShape = function(imageMapName, shapeName) { // First, check which shape triggered the event if (shapeName == 'Circle 1') { // Change the background image of the image map $('.imp-main-image').attr('src', 'path/to/image_for_circle_1.png'); } // Repeat for each shape // … } // Called when the user removes the mouse from a shape $.imageMapProEventUnhighlightedShape = function(imageMapName, shapeName) { // Go back to the default image $('.imp-main-image').attr('src', 'path/to/default_image.png'); } });})(jQuery, window, document);</script>
+<script type='text/javascript' src='https://cddirector.io/wp-content/plugins/image-map-pro-wordpress/js/image-map-pro.min.js?ver=5.1.6' id='image-map-pro-dist-js-js'></script>
+<script type='text/javascript' src='https://cddirector.io/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' src='https://cddirector.io/wp-content/plugins/td-cloud-library/assets/js/js_posts_autoload.min.js?ver=489325fca4f12cbec6ded350cf173551' id='tdb_js_posts_autoload-js'></script>
+<script type='text/javascript' src='https://cddirector.io/wp-content/plugins/td-composer/legacy/Newspaper/js/tagdiv_theme.min.js?ver=9.8' id='td-site-min-js'></script>
+<script type='text/javascript' src='https://cddirector.io/wp-content/plugins/td-cloud-library/assets/js/js_files_for_front.min.js?ver=489325fca4f12cbec6ded350cf173551' id='tdb_js_files_for_front-js'></script>
+<script type='text/javascript' src='https://cddirector.io/wp-includes/js/wp-embed.min.js?ver=5.5.3' id='wp-embed-js'></script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF7XWD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- JS generated by theme -->
+
+<script>
+    
+</script>
+
+
+</body>
+</html>

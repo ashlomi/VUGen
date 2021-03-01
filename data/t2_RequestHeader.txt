@@ -1,0 +1,9 @@
+GET /favicon.ico HTTP/1.1
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; Touch; rv:11.0) like Gecko
+Host: www.bing.com
+Connection: Keep-Alive
+UA-CPU: AMD64
+Accept-Encoding: gzip, deflate
+Cookie: SRCHUID=V=2&GUID=9010253FDD5B4059A48F877952043B78&dmnchg=1; SRCHD=AF=NOFORM; _EDGE_V=1; MUID=1516ADBBF7436C972142A2E0F6B86D28; MUIDB=1516ADBBF7436C972142A2E0F6B86D28; SRCHUSR=DOB=20201006; SRCHHPGUSR=SRCHLANGV2=en
+
